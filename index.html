@@ -4,83 +4,170 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio Project</title>
   </head>
   <body>
     <div class="recent-works">
-      <h2>My Recent Work</h2>
-      <p>Here are a few past design projects I've worked on. Want to see more? <a href="mailto:">Email me</a>.</p>
+      <h2 class="font-extrabold text-2xl my-5 text-center">My Recent Work</h2>
+      <p class="text-lg text-center mx-5">
+        Here are a few past design projects I've worked on. Want to see more?
+        <a
+          href="mailto:"
+          class="text-blue-400 hover:text-blue-500 cursor-pointer"
+          >Email me</a
+        >.
+      </p>
       <!-- TODO: Email not added as of now-->
-      <div class="projects grid grid-cols-1 gap-3 auto-rows-fr md:grid md:grid-cols-2 lg:grid lg:grid-cols-3">
-        <div class="project-container group max-h-72 max-w-fit mx-auto mt-10">
-          <img src="./projects-images/sample-image.png" class="group-hover:hidden">
-          <div class="text-holder hidden h-3/5 w-3/5 mx-auto group-hover:flex group-hover:items-center">
-            <p class="">High-end, custom residential renovaters serving Fraser Valley homeowners.</p>
+      <div
+        class="projects grid grid-cols-1 gap-3 auto-rows-fr md:grid md:grid-cols-2 lg:grid lg:grid-cols-3"
+      >
+        <div
+          class="py-0 project-container group max-w-fit mx-auto mt-10 bg-blue-900"
+        >
+          <img
+            src="./projects-images/sample-image.png"
+            class="group-hover:hidden"
+          />
+          <div
+            class="text-holder hidden h-3/5 w-3/5 mx-auto px-6 group-hover:flex group-hover:items-center group-hover:w-full"
+          >
+            <p class="text-white text-center text-xl">
+              High-end, custom residential renovaters serving Fraser Valley
+              homeowners.
+            </p>
           </div>
-          <div class="button-holder hidden group-hover:block">
+          <div
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+          >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
         </div>
-        <div class="project-container group max-h-72 max-w-fit mx-auto mt-10">
-          <img src="./projects-images/sample-image.png" class="group-hover:hidden ">
-          <div class="text-holder hidden h-3/5 w-3/5 mx-auto group-hover:flex group-hover:items-center">
-            <p class="">Accounting and tax services characterized by quality, reliability and trust.</p>
+        <div
+          class="py-0 project-container group max-w-fit mx-auto mt-10 bg-blue-900"
+        >
+          <img
+            src="./projects-images/sample-image.png"
+            class="group-hover:hidden"
+          />
+          <div
+            class="text-holder hidden h-3/5 w-3/5 mx-auto px-6 group-hover:flex group-hover:items-center group-hover:w-full"
+          >
+            <p class="text-white text-center text-xl">
+              Accounting and tax services characterized by quality, reliability
+              and trust.
+            </p>
           </div>
-          <div class="button-holder hidden group-hover:block">
+          <div
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+          >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
         </div>
-        <div class="project-container group max-h-72 max-w-fit mx-auto mt-10">
-          <img src="./projects-images/sample-image.png" class="group-hover:hidden ">
-          <div class="text-holder hidden h-3/5 w-3/5 mx-auto group-hover:flex group-hover:items-center">
-            <p class="">Blockchain pioneers bringing transparency, trust and security to supply.</p>
+        <div
+          class="py-0 project-container group max-w-fit mx-auto mt-10 bg-blue-900"
+        >
+          <img
+            src="./projects-images/sample-image.png"
+            class="group-hover:hidden"
+          />
+          <div
+            class="text-holder hidden h-3/5 w-3/5 mx-auto px-6 group-hover:flex group-hover:items-center group-hover:w-full"
+          >
+            <p class="text-white text-center text-xl">
+              Blockchain pioneers bringing transparency, trust and security to
+              supply.
+            </p>
           </div>
-          <div class="button-holder hidden group-hover:block">
+          <div
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+          >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
         </div>
-        <div class="project-container group max-h-72 max-w-fit mx-auto mt-10">
-          <img src="./projects-images/sample-image.png" class="group-hover:hidden ">
-          <div class="text-holder hidden h-3/5 w-3/5 mx-auto group-hover:flex group-hover:items-center">
-            <p class="">Business savvy tech experts helping forward thinking companies get things done.</p>
+        <div
+          class="py-0 project-container group max-w-fit mx-auto mt-10 bg-blue-900"
+        >
+          <img
+            src="./projects-images/sample-image.png"
+            class="group-hover:hidden"
+          />
+          <div
+            class="text-holder hidden h-3/5 w-3/5 mx-auto px-6 group-hover:flex group-hover:items-center group-hover:w-full"
+          >
+            <p class="text-white text-center text-xl">
+              Business savvy tech experts helping forward thinking companies get
+              things done.
+            </p>
           </div>
-          <div class="button-holder hidden group-hover:block">
+          <div
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+          >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
         </div>
-        <div class="project-container group max-h-72 max-w-fit mx-auto mt-10">
-          <img src="./projects-images/sample-image.png" class="group-hover:hidden ">
-          <div class="text-holder hidden h-3/5 w-3/5 mx-auto group-hover:flex group-hover:items-center">
-            <p class="">Vancouver's tower crane rental service and support leader since 1974.</p>
+        <div
+          class="py-0 project-container group max-w-fit mx-auto mt-10 bg-blue-900"
+        >
+          <img
+            src="./projects-images/sample-image.png"
+            class="group-hover:hidden"
+          />
+          <div
+            class="text-holder hidden h-3/5 w-3/5 mx-auto px-6 group-hover:flex group-hover:items-center group-hover:w-full"
+          >
+            <p class="text-white text-center text-xl">
+              Vancouver's tower crane rental service and support leader since
+              1974.
+            </p>
           </div>
-          <div class="button-holder hidden group-hover:block">
+          <div
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+          >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
         </div>
-        <div class="project-container group max-h-72 max-w-fit mx-auto mt-10">
-          <img src="./projects-images/sample-image.png" class="group-hover:hidden ">
-          <div class="text-holder hidden h-3/5 w-3/5 mx-auto group-hover:flex group-hover:items-center">
-            <p class="">Results-oriented, responsive and flexible full service civil engineering firm.</p>
+        <div
+          class="py-0 project-container group max-w-fit mx-auto mt-10 bg-blue-900"
+        >
+          <img
+            src="./projects-images/sample-image.png"
+            class="group-hover:hidden"
+          />
+          <div
+            class="text-holder hidden h-3/5 w-3/5 mx-auto px-6 group-hover:flex group-hover:items-center group-hover:w-full"
+          >
+            <p class="text-white text-center text-xl">
+              Results-oriented, responsive and flexible full service civil
+              engineering firm.
+            </p>
           </div>
-          <div class="button-holder hidden group-hover:block">
+          <div
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+          >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
         </div>
       </div>
-      <button>See more on Dribble</button>
-      <div class="separator"></div>
-      <p>I'm proud to have collaborated with some awesome companies:</p>
+      <button
+        class="block px-6 py-4 my-24 mx-auto text-center text-xl font-bold rounded-full text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white"
+      >
+        See more on Dribble
+      </button>
+      <div class="separator my-44 w-full h-1 bg-slate-100"></div>
+      <p class="text-center font-bold text-2xl my-24">
+        I'm proud to have collaborated with some awesome companies:
+      </p>
       <div class="companies grid gap-4 grid-cols-2 md:grid md:grid-cols-4">
-        <img src="./projects-images/sample-image.png">
-        <img src="./projects-images/sample-image.png">
-        <img src="./projects-images/sample-image.png">
-        <img src="./projects-images/sample-image.png">
-        <img src="./projects-images/sample-image.png">
-        <img src="./projects-images/sample-image.png">
-        <img src="./projects-images/sample-image.png">
-        <img src="./projects-images/sample-image.png">
+        <img src="./projects-images/sample-image.png" />
+        <img src="./projects-images/sample-image.png" />
+        <img src="./projects-images/sample-image.png" />
+        <img src="./projects-images/sample-image.png" />
+        <img src="./projects-images/sample-image.png" />
+        <img src="./projects-images/sample-image.png" />
+        <img src="./projects-images/sample-image.png" />
+        <img src="./projects-images/sample-image.png" />
       </div>
     </div>
     <script src="./script.js"></script>
