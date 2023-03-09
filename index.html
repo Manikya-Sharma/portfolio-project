@@ -7,10 +7,11 @@
     <link rel="stylesheet" href="./style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Portfolio Project</title>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
   </head>
-  <body class="font-sans">
-    <div class="recent-works px-5 md:px-7 lg:px-10 mb-20 mt-20">
+  <body>
+    <!-- Recent Works Section (Done be Manikya)-->
+    <div class="recent-works font-sans px-5 md:px-7 lg:px-10 mb-20 mt-20">
       <h2 class="font-extrabold text-3xl mt-5 mb-8 text-center">
         My Recent Work
       </h2>
@@ -31,7 +32,7 @@
         >
           <img
             src="./projects-images/wfdesignbuild.png"
-            class="group-hover:hidden h-full w-full rounded-md"
+            class="group-hover:hidden h-full w-full rounded-md duration-300 transition ease-in-out delay-300"
           />
           <div
             class="text-holder hidden h-3/5 w-3/5 mx-auto px-6 group-hover:flex group-hover:items-center group-hover:w-full"
@@ -42,7 +43,7 @@
             </p>
           </div>
           <div
-            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600 transition duration-200"
           >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
@@ -63,7 +64,7 @@
             </p>
           </div>
           <div
-            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600 transition duration-200"
           >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
@@ -84,7 +85,7 @@
             </p>
           </div>
           <div
-            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600 transition duration-200"
           >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
@@ -105,7 +106,7 @@
             </p>
           </div>
           <div
-            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600 transition duration-200"
           >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
@@ -126,7 +127,7 @@
             </p>
           </div>
           <div
-            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600 transition duration-200"
           >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
@@ -147,14 +148,14 @@
             </p>
           </div>
           <div
-            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600"
+            class="button-holder hidden group-hover:block text-white w-fit mx-auto px-6 py-2 border-2 border-purple-600 rounded-3xl text-center text-xl hover:bg-purple-600 transition duration-200"
           >
             <button class="block mx-auto">Visit Website &gt;</button>
           </div>
         </div>
       </div>
       <button
-        class="flex gap-3 px-6 py-4 my-24 mx-auto text-center text-xl font-bold rounded-full w-fit text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white"
+        class="flex gap-3 px-6 py-4 my-24 mx-auto text-center text-xl font-bold rounded-full w-fit text-purple-500 border-2 border-purple-500 hover:bg-purple-500 hover:text-white transition duration-200"
       >
         <span class="icon"
           ><svg
@@ -191,4 +192,6 @@
         <img src="./projects-images/serpmetrics.svg" class="w-full h-full" />
       </div>
     </div>
+    <!--Recent works section end-->
+  </body>
 </html>
