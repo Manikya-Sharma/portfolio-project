@@ -21,13 +21,13 @@
           class="Buttons flex justify-end m-10 mr-[8px] text-[18px] collapse lg:visible"
         >
           <button
-            class="hover:text-[#6e07f3] mr-6 text-gray-800 font-sans font-medium"
+            class="hover:text-[#6e07f3] mr-6 text-gray-800 font-sans font-medium transition-all duration-300"
           >
             Mentorship
           </button>
           <a href="sign up code.html"
             ><button
-              class="border-2 text-[#6e07f3] mr-10 hover:text-[#ffffff] border-[#6e07f3] hover:bg-[#6e07f3] rounded-l-full rounded-r-full p-[6px] pl-2 w-[113px] h-[45px] text-centre font-sans font-semibold"
+              class="border-2 text-[#6e07f3] mr-10 hover:text-[#ffffff] border-[#6e07f3] hover:bg-[#6e07f3] rounded-l-full rounded-r-full p-[6px] pl-2 w-[113px] h-[45px] text-centre font-sans font-semibold transition-all duration-300"
             >
               Say Hello
             </button></a
@@ -58,74 +58,87 @@
     </div>
 
     <!-- About me-->
-    <div class="relative">
-      <div class="bg-[#6e07f3]">
-        <div class="w-fit mx-auto pt-20 pb-52 px-5 text-center text-white">
-          <h2 class="text-xl font-bold mb-10">
-            Hi, I'm Matt. Nice to meet you.
-          </h2>
-          <p class="text-lg font-semibold">
-            Since beginning my journey as a freelance designer over 11 years
-            ago, I've done remote work for agencies, consulted for startups, and
-            collaborated with talented people to create digital products for
-            both business and consumer use. I'm quietly confident, naturally
-            curious, and perpetually working on improving my chops one design
-            problem at a time.
-          </p>
+    <div>
+      <div class="relative">
+        <div class="bg-[#6e07f3]">
+          <div class="w-fit mx-auto pt-20 pb-52 px-5 text-center text-white">
+            <h2 class="text-xl font-bold mb-10">
+              Hi, I'm Matt. Nice to meet you.
+            </h2>
+            <p class="text-lg font-semibold">
+              Since beginning my journey as a freelance designer over 11 years
+              ago, I've done remote work for agencies, consulted for startups,
+              and collaborated with talented people to create digital products
+              for both business and consumer use. I'm quietly confident,
+              naturally curious, and perpetually working on improving my chops
+              one design problem at a time.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="absolute -bottom-16 bg-white w-4/5 block rounded-t-xl py-20 px-auto text-center">
-        <!--The bottom of div spaces to bottom of parent. So need to add JS to make responsive-->
-        <div>
-          <img>
-          <h3>Designer</h3>
-          <p>I value simple content structure, clean design patterns, and clear thoughtful interactions.</p>
-          <h4>Things I enjoy designing:</h4>
-          <p>UX, UI, Web, Apps, Logos</p>
-          <h4>Design Tools:</h4>
-          <ul>
-            <li>Affinity Designer</li>
-            <li>Figma</li>
-            <li>Font Awesome</li>
-            <li>Pen and Paper</li>
-            <li>Sketch</li>
-            <li>Webflow</li>
-          </ul>
-        </div>
-        <div>
-          <img>
-          <h3>Frontend Developer</h3>
-          <p>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
-          <h4>Languages I speak:</h4>
-          <p>HTML, Pug, Slim, CSS, Sass, Git</p>
-          <h4>Dev Tools:</h4>
-          <ul>
-            <li>Atom</li>
-            <li>Bitbucket</li>
-            <li>Bootstrap</li>
-            <li>Bulma</li>
-            <li>Codekit</li>
-            <li>Github</li>
-            <li>Serge</li>
-            <li>Terminal</li>
-            <li>Vercel</li>
-          </ul>
-        </div>
-        <div>
-          <img>
-          <h3>Mentor</h3>
-          <p>I genuinely care about people, and love helping fellow designers work on their craft.</p>
-          <h4>Experiences I draw from:</h4>
-          <p>UI/UX, Product design, Freelancing</p>
-          <h4>Mentor stats:</h4>
-          <ul>
-            <li>7 years experience</li>
-            <li>26 short courses</li>
-            <li>65 bootcamps</li>
-            <li>200+ students</li>
-            <li>2350+ mentor sessions</li>
-            <li>16,500+ comments</li>
-          </ul>
+        <div
+          class="about-me absolute bg-white w-4/5 block rounded-t-xl py-20 px-auto text-center"
+        >
+          <div>
+            <!--The bottom of div spaces to bottom of parent. So need to add JS to make responsive-->
+            <img />
+            <h3>Designer</h3>
+            <p>
+              I value simple content structure, clean design patterns, and clear
+              thoughtful interactions.
+            </p>
+            <h4>Things I enjoy designing:</h4>
+            <p>UX, UI, Web, Apps, Logos</p>
+            <h4>Design Tools:</h4>
+            <ul>
+              <li>Affinity Designer</li>
+              <li>Figma</li>
+              <li>Font Awesome</li>
+              <li>Pen and Paper</li>
+              <li>Sketch</li>
+              <li>Webflow</li>
+            </ul>
+          </div>
+          <div>
+            <img />
+            <h3>Frontend Developer</h3>
+            <p>
+              I like to code things from scratch, and enjoy bringing ideas to
+              life in the browser.
+            </p>
+            <h4>Languages I speak:</h4>
+            <p>HTML, Pug, Slim, CSS, Sass, Git</p>
+            <h4>Dev Tools:</h4>
+            <ul>
+              <li>Atom</li>
+              <li>Bitbucket</li>
+              <li>Bootstrap</li>
+              <li>Bulma</li>
+              <li>Codekit</li>
+              <li>Github</li>
+              <li>Serge</li>
+              <li>Terminal</li>
+              <li>Vercel</li>
+            </ul>
+          </div>
+          <div>
+            <img />
+            <h3>Mentor</h3>
+            <p>
+              I genuinely care about people, and love helping fellow designers
+              work on their craft.
+            </p>
+            <h4>Experiences I draw from:</h4>
+            <p>UI/UX, Product design, Freelancing</p>
+            <h4>Mentor stats:</h4>
+            <ul>
+              <li>7 years experience</li>
+              <li>26 short courses</li>
+              <li>65 bootcamps</li>
+              <li>200+ students</li>
+              <li>2350+ mentor sessions</li>
+              <li>16,500+ comments</li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -155,7 +168,7 @@
             class="top-0 h-full w-full rounded-md opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-5"
           />
           <div
-            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-500 group-hover:opacity-100"
+            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-300 group-hover:opacity-100"
           >
             <p class="text-center text-xl font-semibold text-white">
               High-end, custom residential renovaters serving Fraser Valley
@@ -163,7 +176,7 @@
             </p>
           </div>
           <div
-            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-500 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
+            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-300 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
           >
             <button class="relative mx-auto block">Visit Website &gt;</button>
           </div>
@@ -176,7 +189,7 @@
             class="top-0 h-full w-full rounded-md opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-5"
           />
           <div
-            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-500 group-hover:opacity-100"
+            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-300 group-hover:opacity-100"
           >
             <p class="text-center text-xl font-semibold text-white">
               Accounting and tax services characterized by quality, reliability
@@ -184,7 +197,7 @@
             </p>
           </div>
           <div
-            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-500 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
+            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-300 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
           >
             <button class="relative mx-auto block">Visit Website &gt;</button>
           </div>
@@ -197,7 +210,7 @@
             class="top-0 h-full w-full rounded-md opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-5"
           />
           <div
-            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-500 group-hover:opacity-100"
+            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-300 group-hover:opacity-100"
           >
             <p class="text-center text-xl font-semibold text-white">
               Blockchain pioneers bringing transparency, trust and security to
@@ -205,7 +218,7 @@
             </p>
           </div>
           <div
-            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-500 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
+            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-300 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
           >
             <button class="relative mx-auto block">Visit Website &gt;</button>
           </div>
@@ -218,7 +231,7 @@
             class="top-0 h-full w-full rounded-md opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-5"
           />
           <div
-            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-500 group-hover:opacity-100"
+            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-300 group-hover:opacity-100"
           >
             <p class="text-center text-xl font-semibold text-white">
               Business savvy tech experts helping forward thinking companies get
@@ -226,7 +239,7 @@
             </p>
           </div>
           <div
-            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-500 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
+            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-300 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
           >
             <button class="relative mx-auto block">Visit Website &gt;</button>
           </div>
@@ -239,7 +252,7 @@
             class="top-0 h-full w-full rounded-md opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-5"
           />
           <div
-            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-500 group-hover:opacity-100"
+            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-300 group-hover:opacity-100"
           >
             <p class="text-center text-xl font-semibold text-white">
               Vancouver's tower crane rental service and support leader since
@@ -247,7 +260,7 @@
             </p>
           </div>
           <div
-            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-500 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
+            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-300 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
           >
             <button class="relative mx-auto block">Visit Website &gt;</button>
           </div>
@@ -260,7 +273,7 @@
             class="top-0 h-full w-full rounded-md opacity-100 transition-all duration-300 group-hover:opacity-0 group-hover:-translate-y-5"
           />
           <div
-            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-500 group-hover:opacity-100"
+            class="text-holder absolute top-0 mx-auto flex h-3/5 w-full items-center px-6 opacity-0 transition-all duration-300 group-hover:opacity-100"
           >
             <p class="text-center text-xl font-semibold text-white">
               Results-oriented, responsive and flexible full service civil
@@ -268,7 +281,7 @@
             </p>
           </div>
           <div
-            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-500 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
+            class="button-holder cursor-pointer absolute bottom-[20%] mx-auto w-fit rounded-3xl border-2 border-[#6e07f3] px-6 py-2 text-center text-xl text-white opacity-0 transition duration-300 hover:bg-[#6e07f3] group-hover:flex group-hover:opacity-100"
           >
             <button class="relative mx-auto block">Visit Website &gt;</button>
           </div>
