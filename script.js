@@ -24,9 +24,10 @@ for (const project_container of project_containers) {
 }
 
 function give_bottom_margin(container) {
+  // to absolute div
   remove_existing(container, "top");
   const parent_height = container.parentNode.clientHeight;
-  const required_height = parent_height - 80;
+  const required_height = parent_height - 100;
   container.classList.add(`top-[${required_height}px]`);
 }
 function center_absolute(container) {
@@ -35,6 +36,14 @@ function center_absolute(container) {
   const self_width = container.clientWidth;
   container.classList.add(`left-[${(parent_width - self_width) / 2}px]`);
 }
+function add_bottom_margin(container) {
+  // to relative div
+  const parent = container.parentNode;
+  remove_existing(parent, "mb");
+  bottom_length = container.clientHeight;
+  parent.classList.add(`mb-[${bottom_length}px]`);
+}
+
 function about_me() {
   const about_container = document.querySelector(".about-me");
   give_bottom_margin(about_container);
@@ -43,9 +52,3 @@ function about_me() {
 }
 about_me();
 
-function add_bottom_margin(container) {
-  const parent = container.parentNode;
-  remove_existing(parent, "mb");
-  bottom_length = container.clientHeight;
-  parent.classList.add(`mb-[${bottom_length - 80}px]`);
-}
