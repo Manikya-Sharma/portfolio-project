@@ -1,5 +1,79 @@
 // Scripts for website
 
+// hamburger
+function openHamburger(hmb) {
+  hmb.textContent = "x";
+  hmb.classList.remove("closed");
+  hmb.classList.add("opened");
+
+  const containerList = document.createElement("ul");
+  const sayHello = document.createElement("li");
+  sayHello.classList.add(
+    "hover:text-[#6e07f3]",
+    "mr-6",
+    "cursor-pointer",
+    "text-gray-700",
+    "font-sans",
+    "font-medium",
+    "transition-all",
+    "duration-100"
+  );
+  sayHello.textContent = "Say Hello";
+  const mentorship = document.createElement("li");
+  mentorship.classList.add(
+    "hover:text-[#6e07f3]",
+    "mr-6",
+    "cursor-pointer",
+    "text-gray-700",
+    "font-sans",
+    "font-medium",
+    "transition-all",
+    "duration-100"
+  );
+  mentorship.textContent = "Mentorship";
+
+  const navOptions = document.createElement("div");
+  navOptions.classList.add("options");
+  containerList.classList.add(
+    "flex",
+    "flex-col",
+    "gap-3",
+    "ml-auto",
+    "block",
+    "w-fit",
+    "mr-8",
+    "bg-slate-300",
+    "rounded-lg",
+    "pl-10",
+    "py-2"
+  );
+  containerList.appendChild(mentorship);
+  containerList.appendChild(sayHello);
+
+  navOptions.appendChild(containerList);
+  hmb.parentNode.parentNode.parentNode.appendChild(navOptions);
+}
+function closeHamburger(hmb) {
+  hmb.textContent = "≡";
+  hmb.classList.remove("opened");
+  hmb.classList.add("closed");
+  options = document.querySelector(".options");
+  options.remove();
+}
+const hmb = document.querySelector(".hamburger");
+hmb.addEventListener("click", () => {
+  for (const _class of hmb.classList) {
+    if (_class.match("closed")) {
+      openHamburger(hmb);
+      break;
+    } else if (_class.match("opened")) {
+      closeHamburger(hmb);
+      break;
+    }
+  }
+});
+
+// responsiveness
 function remove_existing(container, cls) {
   for (const _class of container.classList) {
     if (_class.match(cls)) {
@@ -50,5 +124,5 @@ function about_me() {
   center_absolute(about_container);
   add_bottom_margin(about_container);
 }
-about_me();
 
+window.onscroll = about_me;
