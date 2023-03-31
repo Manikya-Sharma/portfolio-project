@@ -44,7 +44,7 @@ function openHamburger(hmb) {
     "mr-8",
     "bg-slate-300",
     "rounded-lg",
-    "pl-10",
+    "pl-6",
     "py-2"
   );
   containerList.appendChild(mentorship);
