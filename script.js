@@ -125,4 +125,12 @@ function about_me() {
   add_bottom_margin(about_container);
 }
 
-window.onscroll = about_me;
+function startup() {
+  const startup_container = document.querySelector(".startup");
+  give_bottom_margin(startup_container);
+  center_absolute(startup_container);
+  add_bottom_margin(startup_container);
+}
+
+about_me();
+startup();
