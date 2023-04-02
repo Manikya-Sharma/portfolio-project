@@ -8,14 +8,14 @@ This is a website for personal portfolio of a full stack developer.
 
 ## Frameworks used
 
-* TailwindCSS
+- TailwindCSS
 
 ---
 
 ## Collaborators
 
-* Ayush Ranjan Sinha
-* Kavya Agrawal
-* Manikya Sharma
-* Parth Jain
-* Ritvik Kumar
+- Ayush Ranjan Sinha
+- Kavya Agrawal
+- Manikya Sharma
+- Parth Jain
+- Ritvik Kumar
