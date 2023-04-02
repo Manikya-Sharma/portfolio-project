@@ -132,5 +132,9 @@ function startup() {
   add_bottom_margin(startup_container);
 }
 
+window.addEventListener("resize", () => {
+  about_me();
+  startup();
+});
 about_me();
 startup();
