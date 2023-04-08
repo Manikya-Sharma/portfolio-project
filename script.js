@@ -6,13 +6,12 @@ function openHamburger(hmb) {
   hmb.classList.remove("closed");
   hmb.classList.add("opened");
 
-  const containerList = document.createElement("ul");
   const sayHello = document.createElement("li");
   sayHello.classList.add(
     "hover:text-[#6e07f3]",
-    "mr-6",
+    "font-bold",
     "cursor-pointer",
-    "text-gray-700",
+    "text-gray-800",
     "font-sans",
     "font-medium",
     "transition-all",
@@ -22,9 +21,9 @@ function openHamburger(hmb) {
   const mentorship = document.createElement("li");
   mentorship.classList.add(
     "hover:text-[#6e07f3]",
-    "mr-6",
+    "font-bold",
     "cursor-pointer",
-    "text-gray-700",
+    "text-gray-800",
     "font-sans",
     "font-medium",
     "transition-all",
@@ -33,19 +32,27 @@ function openHamburger(hmb) {
   mentorship.textContent = "Mentorship";
 
   const navOptions = document.createElement("div");
-  navOptions.classList.add("options");
+  navOptions.classList.add("options", "w-full");
+
+  const containerList = document.createElement("ul");
   containerList.classList.add(
     "flex",
     "flex-col",
     "gap-3",
-    "ml-auto",
+    "mx-auto",
+    "mt-5",
+    "py-4",
+    "px-[100px]",
+    "shadow-md",
+    "shadow-black/30",
     "block",
     "w-fit",
-    "mr-8",
     "bg-slate-300",
     "rounded-lg",
-    "pl-6",
-    "py-2"
+    "transition-all",
+    "duration-200",
+    "hover:shadow-black/50",
+    "text-center"
   );
   containerList.appendChild(mentorship);
   containerList.appendChild(sayHello);
