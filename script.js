@@ -17,6 +17,9 @@ function openHamburger(hmb) {
     "transition-all",
     "duration-100"
   );
+  sayHello.addEventListener("click", ()=>{
+    location.href="./sign-up-code.html"
+  });
   sayHello.textContent = "Say Hello";
   const mentorship = document.createElement("li");
   mentorship.classList.add(
