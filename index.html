@@ -18,11 +18,15 @@
         <div class="flex justify-around">
           <div class="ml-8 mt-[3.2rem] min-w-[60px] grow-0 md:ml-14">
             <a href="#"
-              ><img src="./intro-images/logo.png" class="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] md:w-[60px] md:h-[60px]"
+              ><img
+                src="./intro-images/logo.png"
+                class="h-[30px] w-[30px] sm:h-[40px] sm:w-[40px] md:h-[60px] md:w-[60px]"
             /></a>
           </div>
 
-          <div class="Buttons md:grow-1 ml-auto mt-[3rem] md:mr-[8px] text-[18px]">
+          <div
+            class="Buttons md:grow-1 ml-auto mt-[3rem] text-[18px] md:mr-[8px]"
+          >
             <div class="hidden md:flex">
               <button
                 class="mr-6 mt-2 font-medium text-gray-800 transition-all duration-300 hover:text-[#6e07f3]"
@@ -41,7 +45,7 @@
               </div>
             </div>
             <button
-              class="hamburger closed duration-800 ml-6 mr-14 block text-[25px] sm:text-[30px] font-light text-gray-800 transition-all md:collapse"
+              class="hamburger closed duration-800 ml-6 mr-14 block text-[25px] font-light text-gray-800 transition-all sm:text-[30px] md:collapse"
             >
               ≡
             </button>
@@ -88,7 +92,7 @@
           class="about-me px-auto absolute block w-[90%] justify-around rounded-lg rounded-t-xl border-2 bg-white py-20 text-center md:flex"
         >
           <div
-            class="border-1 mb-14 border border-x-0 border-t-0 border-b-slate-200 px-5 sm:px-7 md:px-10 pb-14 md:mb-0 md:border-y-0 md:border-r-2 md:border-r-slate-100 md:pb-0"
+            class="border-1 mb-14 border border-x-0 border-t-0 border-b-slate-200 px-5 pb-14 sm:px-7 md:mb-0 md:border-y-0 md:border-r-2 md:border-r-slate-100 md:px-10 md:pb-0"
           >
             <!--The bottom of div spaces to bottom of parent. So need to add JS to make responsive-->
             <div
@@ -121,13 +125,37 @@
             <h4 class="font-bold text-[#6e07f3]">Things I enjoy designing:</h4>
             <p class="mb-10 font-semibold">UX, UI, Web, Apps, Logos</p>
             <h4 class="mb-4 font-bold text-[#6e07f3]">Design Tools:</h4>
-            <ul class=" text-center leading-8 gap-[0.5rem] font-semibold">
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Affinity Designer</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Figma</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Font Awesome</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Pen and Paper</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Sketch</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Webflow</li>
+            <ul class="gap-[0.5rem] text-center font-semibold leading-8">
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Affinity Designer
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Figma
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Font Awesome
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Pen and Paper
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Sketch
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Webflow
+              </li>
             </ul>
           </div>
           <div
@@ -163,16 +191,52 @@
             <h4 class="font-bold text-[#6e07f3]">Languages I speak:</h4>
             <p class="mb-10 font-semibold">HTML, Pug, Slim, CSS, Sass, Git</p>
             <h4 class="mb-4 font-bold text-[#6e07f3]">Dev Tools:</h4>
-            <ul class=" text-center leading-8 gap-[0.5rem] font-semibold">
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Atom</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Bitbucket</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Bootstrap</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Bulma</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Codekit</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Github</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Serge</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Terminal</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">Vercel</li>
+            <ul class="gap-[0.5rem] text-center font-semibold leading-8">
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Atom
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Bitbucket
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Bootstrap
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Bulma
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Codekit
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Github
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Serge
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Terminal
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                Vercel
+              </li>
             </ul>
           </div>
           <div class="px-2 md:px-4">
@@ -208,13 +272,37 @@
               UI/UX, Product design, Freelancing
             </p>
             <h4 class="mb-4 font-bold text-[#6e07f3]">Mentor stats:</h4>
-            <ul class=" text-center leading-8 gap-[0.5rem] font-semibold">
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">7 years experience</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">26 short courses</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">65 bootcamps</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">200+ students</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">2350+ mentor sessions</li>
-              <li class="bg-purple-200 w-fit px-3 my-1 mx-1 rounded-3xl inline-block cursor-pointer text-slate-800 hover:bg-slate-100 hover:text-black/80 transition-all duration-200">16,500+ comments</li>
+            <ul class="gap-[0.5rem] text-center font-semibold leading-8">
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                7 years experience
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                26 short courses
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                65 bootcamps
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                200+ students
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                2350+ mentor sessions
+              </li>
+              <li
+                class="my-1 mx-1 inline-block w-fit cursor-pointer rounded-3xl bg-purple-200 px-3 text-slate-800 transition-all duration-200 hover:bg-slate-100 hover:text-black/80"
+              >
+                16,500+ comments
+              </li>
             </ul>
           </div>
         </div>
@@ -370,26 +458,26 @@
       >
         <span class="icon"
           ><svg
-          class="inline-block w-5"
-          aria-hidden="true"
-          focusable="false"
-          data-prefix="fal"
-          data-icon="arrow-up-right-from-square"
-          role="img"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 512 512"
-          data-fa-i2svg=""
-        >
-          <path
-            fill="currentColor"
-            d="M336 0c-8.8 0-16 7.2-16 16s7.2 16 16 16H457.4L212.7 276.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L480 54.6V176c0 8.8 7.2 16 16 16s16-7.2 16-16V16c0-8.8-7.2-16-16-16H336zM64 64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V304c0-8.8-7.2-16-16-16s-16 7.2-16 16V448c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32H208c8.8 0 16-7.2 16-16s-7.2-16-16-16H64z"
-          ></path>
-        </svg>
+            class="inline-block w-5"
+            aria-hidden="true"
+            focusable="false"
+            data-prefix="fal"
+            data-icon="arrow-up-right-from-square"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 512 512"
+            data-fa-i2svg=""
+          >
+            <path
+              fill="currentColor"
+              d="M336 0c-8.8 0-16 7.2-16 16s7.2 16 16 16H457.4L212.7 276.7c-6.2 6.2-6.2 16.4 0 22.6s16.4 6.2 22.6 0L480 54.6V176c0 8.8 7.2 16 16 16s16-7.2 16-16V16c0-8.8-7.2-16-16-16H336zM64 64C28.7 64 0 92.7 0 128V448c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V304c0-8.8-7.2-16-16-16s-16 7.2-16 16V448c0 17.7-14.3 32-32 32H64c-17.7 0-32-14.3-32-32V128c0-17.7 14.3-32 32-32H208c8.8 0 16-7.2 16-16s-7.2-16-16-16H64z"
+            ></path>
+          </svg>
           <!-- <i class="fab fa-dribbble"></i> -->
         </span>
         See more
       </button>
-      <div class="separator my-12 md:my-36 h-1 w-full bg-slate-100"></div>
+      <div class="separator my-12 h-1 w-full bg-slate-100 md:my-36"></div>
       <p class="my-24 text-center text-2xl font-bold">
         I'm proud to have collaborated with some awesome companies:
       </p>
@@ -427,7 +515,7 @@
             class="mb-10 rounded-lg border-2 border-slate-200 bg-white py-20"
           >
             <img class="mx-auto mb-7 w-28" src="./startup-images/basin.svg" />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               A powerful, easy-to-configure form backend for designers and
               developers.
             </p>
@@ -460,7 +548,7 @@
               class="mx-auto mb-7 w-28"
               src="./startup-images/shipable.svg"
             />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               Short, focused design and growth collabs for startup tech
               founders.
             </p>
@@ -490,7 +578,7 @@
             class="mb-10 rounded-lg border-2 border-slate-200 bg-white py-20"
           >
             <img class="mx-auto mb-7 w-28" src="./startup-images/junkbox.svg" />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               Intelligent API solution for automatic spam protection without the
               manual work.
             </p>
@@ -520,7 +608,7 @@
             class="mb-10 rounded-lg border-2 border-slate-200 bg-white py-20"
           >
             <img class="mx-auto mb-7 w-28" src="./startup-images/postpal.svg" />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               A people-friendly content publishing platform that integrates with
               any tech stack.
             </p>
@@ -553,7 +641,7 @@
               class="mx-auto mb-7 w-28"
               src="./startup-images/kybercore.svg"
             />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               Next level plug and play chassis systems for custom DIY lightsaber
               builds.
             </p>
@@ -583,7 +671,7 @@
             class="mb-10 rounded-lg border-2 border-slate-200 bg-white py-20"
           >
             <img class="mx-auto mb-7 w-28" src="./startup-images/houston.svg" />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               Simple feedback and engagement tools that help teams ship winning
               products.
             </p>
@@ -616,7 +704,7 @@
               class="mx-auto mb-7 w-28"
               src="./startup-images/nanobrand.svg"
             />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               Human-crafted logos and brand assets for startups and indie hacker
               projects.
             </p>
@@ -649,7 +737,7 @@
               class="mx-auto mb-7 w-28"
               src="./startup-images/dovetail.svg"
             />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               A space and member management solution for coworking communities.
             </p>
             <a
@@ -681,7 +769,7 @@
               class="mx-auto mb-7 w-28"
               src="./startup-images/userforge.svg"
             />
-            <p class="mb-5 w-[75%] mx-auto">
+            <p class="mx-auto mb-5 w-[75%]">
               A collaborative tool for creating simple, effective user personas.
             </p>
             <a
@@ -712,7 +800,7 @@
         <h2 class="text-center text-xl font-semibold">
           Interested in collaborating with me?
         </h2>
-        <p class="mt-5 text-center text-lg mx-16">
+        <p class="mx-16 mt-5 text-center text-lg">
           I'm always open to discussing product design work or partnership
           opportunities.
         </p>
@@ -768,7 +856,7 @@
             <span
               class="mx-auto block w-fit max-w-[24rem] px-3 pt-5 text-center text-lg md:max-w-[85rem] md:px-[21rem] md:pb-4 md:text-2xl"
               >“Matt was a real pleasure to work with and we look forward to
-              working with him again. He’s definitely the kind of designer you
+              working with him again. He's definitely the kind of designer you
               can trust with a project from start to finish.”</span
             >
           </div>
@@ -779,31 +867,74 @@
 
         <p class="text-center">Creative Lead, Good Kind</p>
       </div>
-      <div class="mx-auto mt-16 w-fit md:mt-28">
-        <div
-          class="items-center rounded-xl bg-[#141c3a] pb-16 text-center md:flex md:justify-between md:gap-8 md:pr-24 md:pt-7 md:pb-7 md:align-middle"
-        >
-          <h1 class="pt-12 text-3xl font-bold text-white md:pt-2 md:pl-24">
-            Start a project
-          </h1>
-          <p class="px-4 pt-10 pb-10 font-semibold text-white md:w-[26rem]">
-            Interested in working together? We should queue up a time to chat.
-            I’ll buy the coffee.
-          </p>
-          <button
-            class="rounded-[50px] border-2 border-[#5be9b9] pt-4 pb-4 pr-10 pl-10 text-xl font-normal text-white transition-all duration-500 hover:bg-[#5be9b9] hover:text-[#141c3a] md:pr-12 md:pl-12"
+      <div class="bg-gradient-to-b from-white to-[#6e07f3] pt-10 mt-10">
+        <div class="mx-auto mt-16 w-fit md:mt-28">
+          <div
+            class="max-w-3/4 items-center rounded-xl bg-[#141c3a] pb-16 text-center md:flex md:justify-between md:gap-8 md:pr-24 md:pt-7 md:pb-7 md:align-middle"
           >
-            Let's do this
-          </button>
+            <h1 class="pt-12 text-3xl font-bold text-white md:pt-2 md:pl-24">
+              Start a project
+            </h1>
+            <p class="px-4 pt-10 pb-10 font-semibold text-white md:w-[26rem]">
+              Interested in working together? We should queue up a time to chat.
+              I’ll buy the coffee.
+            </p>
+            <button
+              class="rounded-[50px] border-2 border-[#5be9b9] pt-4 pb-4 pr-10 pl-10 text-xl font-normal text-white transition-all duration-500 hover:bg-[#5be9b9] hover:text-[#141c3a] md:pr-12 md:pl-12"
+            >
+              <span>
+                <svg
+                  fill="currentColor"
+                  class="inline-block h-10 w-10"
+                  version="1.1"
+                  id="Capa_1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  viewBox="-47.65 -47.65 571.77 571.77"
+                  xml:space="preserve"
+                  transform="matrix(1, 0, 0, 1, 0, 0)rotate(180)"
+                >
+                  <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                  <g
+                    id="SVGRepo_tracerCarrier"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke="#CCCCCC"
+                    stroke-width="4.76472"
+                  >
+                    <g>
+                      <path
+                        d="M456.643,58.572H254.566l0.194,76.721c5.039-1.151,10.202-1.726,15.483-1.726c38.679,0,70.143,31.479,70.143,70.158 c0.008,18.742-7.288,36.362-20.538,49.62c-13.25,13.258-30.872,20.56-49.62,20.56c-5.265,0-10.436-0.583-15.475-1.734 l-0.186,59.536v0.591h54.038c2.045,0,3.942,1.043,5.031,2.77c1.096,1.726,1.236,3.887,0.365,5.738 c-3.273,6.937-5.125,14.666-5.125,22.847c0,29.961,24.301,54.247,54.249,54.247c29.969,0,54.247-24.286,54.247-54.247 c0-8.181-1.851-15.91-5.123-22.847c-0.871-1.851-0.739-4.02,0.357-5.738c1.097-1.726,2.994-2.77,5.039-2.77h38.999 c10.957,0,19.829-8.872,19.829-19.829V78.402C476.472,67.445,467.6,58.572,456.643,58.572z"
+                      ></path>
+                      <path
+                        d="M270.244,257.98c29.953,0,54.225-24.3,54.217-54.247c0-29.963-24.263-54.241-54.217-54.241h-0.016 c-0.016,0-0.032,0-0.054,0c-8.165,0-15.88,1.851-22.793,5.117c-0.817,0.389-1.686,0.575-2.558,0.575 c-1.112,0-2.217-0.311-3.188-0.925c-1.726-1.104-2.762-3.001-2.762-5.047l-0.233-90.64H19.829C8.88,58.572,0,67.445,0,78.402 v72.064c0,2.27,1.174,4.37,3.096,5.56c1.05,0.653,2.247,0.979,3.445,0.979c0.995,0,1.997-0.226,2.916-0.685 c7.192-3.593,15.249-5.66,23.849-5.66c30.133,0,54.567,24.432,54.567,54.565c0,30.133-24.434,54.567-54.567,54.567 c-8.6,0-16.657-2.069-23.849-5.662c-0.925-0.459-1.921-0.691-2.924-0.691c-1.198,0-2.387,0.334-3.437,0.979 C1.167,255.617,0,257.716,0,259.987v51.837c0,10.957,8.88,19.829,19.829,19.829h218.811l0.233-73.409 c0-2.037,1.043-3.934,2.769-5.023c0.971-0.623,2.091-0.933,3.211-0.933c0.855,0,1.726,0.186,2.527,0.561 c6.937,3.281,14.658,5.131,22.847,5.131H270.244z"
+                      ></path>
+                    </g>
+                  </g>
+                  <g id="SVGRepo_iconCarrier">
+                    <g>
+                      <path
+                        d="M456.643,58.572H254.566l0.194,76.721c5.039-1.151,10.202-1.726,15.483-1.726c38.679,0,70.143,31.479,70.143,70.158 c0.008,18.742-7.288,36.362-20.538,49.62c-13.25,13.258-30.872,20.56-49.62,20.56c-5.265,0-10.436-0.583-15.475-1.734 l-0.186,59.536v0.591h54.038c2.045,0,3.942,1.043,5.031,2.77c1.096,1.726,1.236,3.887,0.365,5.738 c-3.273,6.937-5.125,14.666-5.125,22.847c0,29.961,24.301,54.247,54.249,54.247c29.969,0,54.247-24.286,54.247-54.247 c0-8.181-1.851-15.91-5.123-22.847c-0.871-1.851-0.739-4.02,0.357-5.738c1.097-1.726,2.994-2.77,5.039-2.77h38.999 c10.957,0,19.829-8.872,19.829-19.829V78.402C476.472,67.445,467.6,58.572,456.643,58.572z"
+                      ></path>
+                      <path
+                        d="M270.244,257.98c29.953,0,54.225-24.3,54.217-54.247c0-29.963-24.263-54.241-54.217-54.241h-0.016 c-0.016,0-0.032,0-0.054,0c-8.165,0-15.88,1.851-22.793,5.117c-0.817,0.389-1.686,0.575-2.558,0.575 c-1.112,0-2.217-0.311-3.188-0.925c-1.726-1.104-2.762-3.001-2.762-5.047l-0.233-90.64H19.829C8.88,58.572,0,67.445,0,78.402 v72.064c0,2.27,1.174,4.37,3.096,5.56c1.05,0.653,2.247,0.979,3.445,0.979c0.995,0,1.997-0.226,2.916-0.685 c7.192-3.593,15.249-5.66,23.849-5.66c30.133,0,54.567,24.432,54.567,54.565c0,30.133-24.434,54.567-54.567,54.567 c-8.6,0-16.657-2.069-23.849-5.662c-0.925-0.459-1.921-0.691-2.924-0.691c-1.198,0-2.387,0.334-3.437,0.979 C1.167,255.617,0,257.716,0,259.987v51.837c0,10.957,8.88,19.829,19.829,19.829h218.811l0.233-73.409 c0-2.037,1.043-3.934,2.769-5.023c0.971-0.623,2.091-0.933,3.211-0.933c0.855,0,1.726,0.186,2.527,0.561 c6.937,3.281,14.658,5.131,22.847,5.131H270.244z"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+              </span>
+              Let's do this
+            </button>
+          </div>
         </div>
-      </div>
-    </div>
-    <div class="ending rounded-t-xl bg-[#6e07f3] py-24 text-white">
-      <div class="px-4 pt-5 text-center text-lg font-semibold">
-        Made by - Ayush Ranjan | Manikya Sharma | Parth Jain | Ritvik Kumar
-      </div>
-      <div class="px-4 pt-5 text-center text-lg font-semibold">
-        Portfolio Project by Team - Beta
+        <div class="ending rounded-t-xl py-24 text-white drop-shadow-md">
+          <div class="px-4 pt-5 text-center text-lg font-semibold">
+            Made by - Ayush Ranjan | Manikya Sharma | Parth Jain | Ritvik Kumar
+          </div>
+          <div class="px-4 pt-5 text-center text-lg font-semibold">
+            Portfolio Project by Team - Beta
+          </div>
+        </div>
       </div>
     </div>
   </body>
