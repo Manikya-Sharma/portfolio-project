@@ -17,8 +17,8 @@ function openHamburger(hmb) {
     "transition-all",
     "duration-100"
   );
-  sayHello.addEventListener("click", ()=>{
-    location.href="./sign-up-code.html"
+  sayHello.addEventListener("click", () => {
+    location.href = "./sign-up-code.html";
   });
   sayHello.textContent = "Say Hello";
   const mentorship = document.createElement("li");
@@ -148,3 +148,62 @@ window.addEventListener("resize", () => {
 });
 about_me();
 startup();
+
+function togglePointer(toggle, e) {
+  const pt1 = toggle.firstElementChild;
+  const pt2 = toggle.lastElementChild;
+  if (pt1.classList.contains("pointing")) {
+    remove_existing(pt1, "pointing");
+    remove_existing(pt1, "bg");
+    remove_existing(pt1, "border-none");
+  } else {
+    remove_existing(pt2, "pointing");
+    remove_existing(pt2, "bg");
+    remove_existing(pt2, "border-none");
+  }
+  if (!e.target.classList.contains("pointing")) {
+    e.target.classList.add("pointing");
+    updatePointer();
+  }
+}
+
+function updatePointer() {
+  const pointer = document.querySelector(".pointing");
+  pointer.classList.add("bg-[#6e07f3]", "border-none");
+}
+
+const toggle = document.querySelector(".slider");
+const pt1 = toggle.firstElementChild;
+const pt2 = toggle.lastElementChild;
+const selected = pt1.classList.contains("pointing") ? pt1 : pt2;
+
+pt1.addEventListener("click", (e) => {
+  togglePointer(toggle, e);
+});
+pt2.addEventListener("click", (e) => {
+  togglePointer(toggle, e);
+});
+
+updatePointer();
+
+const t1 = document.querySelector(".parent-testimonials").firstElementChild;
+const t2 = document.querySelector(".parent-testimonials").lastElementChild;
+
+toggle.addEventListener("click", () => {
+  if (pt1.classList.contains("pointing")) {
+    remove_existing(t1, "hidden");
+    t2.classList.add("hidden");
+  } else {
+    remove_existing(t2, "hidden");
+    t1.classList.add("hidden");
+  }
+});
+function bind_testimonials() {
+  if (pt1.classList.contains("pointing")) {
+    remove_existing(t1, "hidden");
+    t2.classList.add("hidden");
+  } else {
+    remove_existing(t2, "hidden");
+    t1.classList.add("hidden");
+  }
+}

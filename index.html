@@ -11,7 +11,7 @@
     <script src="./script.js" defer></script>
   </head>
 
-  <body class="font-sans">
+  <body class="font-sans selection:bg-fuchsia-600 selection:text-fuchsia-200">
     <!--Done by Ayush-->
     <div class="mb-5 w-full">
       <div>
@@ -833,12 +833,16 @@
 
     <!-- Testimonials Part done by Ritvik -->
     <div class="mt-16 bg-white md:mt-28">
-      <h2 class="mb-5 sm:mb-10 text-center text-[45px] font-bold">Testimonials</h2>
-      <div class="body-font text-fuchsia-200">
+      <h2 class="mb-5 text-center text-[45px] font-bold sm:mb-10">
+        Testimonials
+      </h2>
+      <div class="text-fuchsia-200">
         <div class="container mx-auto px-5 py-24">
-          <div class="-m-4 flex flex-wrap">
-            <div class="w-full p-4 md:w-1/2">
-              <div class="h-full rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 hover:shadow-xl hover:shadow-black/30 transition-all duration-300 p-8">
+          <div class="parent-testimonials flex">
+            <div class="w-full p-4 md:block md:w-1/2">
+              <div
+                class="h-full rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-black/30"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -849,8 +853,10 @@
                     d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
                   ></path>
                 </svg>
-                <p class="mb-6 leading-relaxed text-lg">
-                  Matt was a real pleasure to work with and we look forward to working with him again. He’s definitely the kind of designer you can trust with a project from start to finish.
+                <p class="mb-6 text-lg leading-relaxed">
+                  Matt was a real pleasure to work with and we look forward to
+                  working with him again. He's definitely the kind of designer
+                  you can trust with a project from start to finish.
                 </p>
                 <a class="inline-flex items-center">
                   <img
@@ -862,13 +868,17 @@
                     <span class="title-font text-xl font-medium text-white"
                       >Pascal Tremblay</span
                     >
-                    <span class="text-md text-white">Creative Lead, Good Kind</span>
+                    <span class="text-md text-white"
+                      >Creative Lead, Good Kind</span
+                    >
                   </span>
                 </a>
               </div>
             </div>
-            <div class="w-full p-4 md:w-1/2">
-              <div class="h-full rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 hover:shadow-xl hover:shadow-black/30 transition-all duration-300 p-8">
+            <div class="hidden w-full p-4 md:block md:w-1/2">
+              <div
+                class="h-full rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-black/30"
+              >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   fill="currentColor"
@@ -879,8 +889,11 @@
                     d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
                   ></path>
                 </svg>
-                <p class="mb-6 leading-relaxed text-lg">
-                  Matt's a clear communicator with the tenacity and confidence to really dig in to tricky design scenarios and the collaborative friction that's needed to produce excellent work.
+                <p class="mb-6 text-lg leading-relaxed">
+                  Matt's a clear communicator with the tenacity and confidence
+                  to really dig in to tricky design scenarios and the
+                  collaborative friction that's needed to produce excellent
+                  work.
                 </p>
                 <a class="inline-flex items-center">
                   <img
@@ -892,15 +905,25 @@
                     <span class="title-font text-xl font-medium text-white"
                       >Alvin Engler</span
                     >
-                    <span class="text-md text-white">CEO, West Third Enterprises, Inc.</span>
+                    <span class="text-md text-white"
+                      >CEO, West Third Enterprises, Inc.</span
+                    >
                   </span>
                 </a>
               </div>
             </div>
           </div>
+          <div class="slider mx-auto mt-10 flex w-fit gap-5 md:hidden">
+            <div
+              class="pointing h-5 w-5 cursor-pointer rounded-full border-2 border-black transition-colors duration-300"
+            ></div>
+            <div
+              class="h-5 w-5 cursor-pointer rounded-full border-2 border-black transition-colors duration-300"
+            ></div>
+          </div>
         </div>
       </div>
-      <div class="mt-2 sm:mt-5 bg-gradient-to-b from-white to-[#6e07f3] pt-10">
+      <div class="mt-2 bg-gradient-to-b from-white to-[#6f00ff] pt-10 sm:mt-5">
         <div class="mx-auto mt-16 w-fit md:mt-28">
           <div
             class="max-w-3/4 items-center rounded-xl bg-[#141c3a] pb-16 text-center md:flex md:justify-between md:gap-8 md:pr-24 md:pt-7 md:pb-7 md:align-middle"
@@ -910,7 +933,7 @@
             </h1>
             <p class="px-4 pt-10 pb-10 font-semibold text-white md:w-[26rem]">
               Interested in working together? We should queue up a time to chat.
-              I’ll buy the coffee.
+              I'll buy the coffee.
             </p>
             <button
               class="rounded-[50px] border-2 border-[#5be9b9] pt-4 pb-4 pr-10 pl-10 text-xl font-normal text-white transition-all duration-500 hover:bg-[#5be9b9] hover:text-[#141c3a] md:pr-12 md:pl-12"
@@ -960,7 +983,7 @@
             </button>
           </div>
         </div>
-        <div class="ending rounded-t-xl py-24 text-white drop-shadow-md">
+        <div class="ending rounded-t-xl py-24 text-fuchsia-200 drop-shadow-md">
           <div class="px-4 pt-5 text-center text-lg font-semibold">
             Made by - Ayush Ranjan | Manikya Sharma | Parth Jain | Ritvik Kumar
           </div>
