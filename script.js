@@ -6,25 +6,27 @@ function openHamburger(hmb) {
   hmb.classList.remove("closed");
   hmb.classList.add("opened");
 
-  const containerList = document.createElement("ul");
   const sayHello = document.createElement("li");
   sayHello.classList.add(
     "hover:text-[#6e07f3]",
-    "mr-6",
+    "font-bold",
     "cursor-pointer",
-    "text-gray-700",
+    "text-gray-800",
     "font-sans",
     "font-medium",
     "transition-all",
     "duration-100"
   );
+  sayHello.addEventListener("click", () => {
+    location.href = "./sign-up-code.html";
+  });
   sayHello.textContent = "Say Hello";
   const mentorship = document.createElement("li");
   mentorship.classList.add(
     "hover:text-[#6e07f3]",
-    "mr-6",
+    "font-bold",
     "cursor-pointer",
-    "text-gray-700",
+    "text-gray-800",
     "font-sans",
     "font-medium",
     "transition-all",
@@ -33,19 +35,27 @@ function openHamburger(hmb) {
   mentorship.textContent = "Mentorship";
 
   const navOptions = document.createElement("div");
-  navOptions.classList.add("options");
+  navOptions.classList.add("options", "w-full");
+
+  const containerList = document.createElement("ul");
   containerList.classList.add(
     "flex",
     "flex-col",
     "gap-3",
-    "ml-auto",
+    "mx-auto",
+    "mt-5",
+    "py-4",
+    "px-[100px]",
+    "shadow-md",
+    "shadow-black/30",
     "block",
     "w-fit",
-    "mr-8",
     "bg-slate-300",
     "rounded-lg",
-    "pl-6",
-    "py-2"
+    "transition-all",
+    "duration-200",
+    "hover:shadow-black/50",
+    "text-center"
   );
   containerList.appendChild(mentorship);
   containerList.appendChild(sayHello);
@@ -138,3 +148,67 @@ window.addEventListener("resize", () => {
 });
 about_me();
 startup();
+
+function togglePointer(toggle, pt) {
+  const pt1 = toggle.firstElementChild;
+  const pt2 = toggle.lastElementChild;
+  if (pt1.classList.contains("pointing")) {
+    remove_existing(pt1, "pointing");
+    remove_existing(pt1, "bg");
+    remove_existing(pt1, "border-none");
+  } else {
+    remove_existing(pt2, "pointing");
+    remove_existing(pt2, "bg");
+    remove_existing(pt2, "border-none");
+  }
+  if (!pt.classList.contains("pointing")) {
+    pt.classList.add("pointing");
+    updatePointer();
+  }
+}
+
+function updatePointer() {
+  const pointer = document.querySelector(".pointing");
+  pointer.classList.add("bg-[#6e07f3]", "border-none");
+}
+
+const toggle = document.querySelector(".slider");
+const pt1 = toggle.firstElementChild;
+const pt2 = toggle.lastElementChild;
+
+pt1.addEventListener("click", (e) => {
+  togglePointer(toggle, e.target);
+});
+pt2.addEventListener("click", (e) => {
+  togglePointer(toggle, e.target);
+});
+
+updatePointer();
+
+const t1 = document.querySelector(".parent-testimonials").firstElementChild;
+const t2 = document.querySelector(".parent-testimonials").lastElementChild;
+
+toggle.addEventListener("click", () => {
+  if (pt1.classList.contains("pointing")) {
+    remove_existing(t1, "hidden");
+    t2.classList.add("hidden");
+  } else {
+    remove_existing(t2, "hidden");
+    t1.classList.add("hidden");
+  }
+});
+
+setInterval(() => {
+  if (pt1.classList.contains("pointing")) {
+    togglePointer(toggle, pt2);
+  } else {
+    togglePointer(toggle, pt1);
+  }
+  if (pt1.classList.contains("pointing")) {
+    remove_existing(t1, "hidden");
+    t2.classList.add("hidden");
+  } else {
+    remove_existing(t2, "hidden");
+    t1.classList.add("hidden");
+  }
+}, 3500);
