@@ -149,7 +149,7 @@ window.addEventListener("resize", () => {
 about_me();
 startup();
 
-function togglePointer(toggle, e) {
+function togglePointer(toggle, pt) {
   const pt1 = toggle.firstElementChild;
   const pt2 = toggle.lastElementChild;
   if (pt1.classList.contains("pointing")) {
@@ -161,8 +161,8 @@ function togglePointer(toggle, e) {
     remove_existing(pt2, "bg");
     remove_existing(pt2, "border-none");
   }
-  if (!e.target.classList.contains("pointing")) {
-    e.target.classList.add("pointing");
+  if (!pt.classList.contains("pointing")) {
+    pt.classList.add("pointing");
     updatePointer();
   }
 }
@@ -175,13 +175,12 @@ function updatePointer() {
 const toggle = document.querySelector(".slider");
 const pt1 = toggle.firstElementChild;
 const pt2 = toggle.lastElementChild;
-const selected = pt1.classList.contains("pointing") ? pt1 : pt2;
 
 pt1.addEventListener("click", (e) => {
-  togglePointer(toggle, e);
+  togglePointer(toggle, e.target);
 });
 pt2.addEventListener("click", (e) => {
-  togglePointer(toggle, e);
+  togglePointer(toggle, e.target);
 });
 
 updatePointer();
@@ -198,7 +197,13 @@ toggle.addEventListener("click", () => {
     t1.classList.add("hidden");
   }
 });
-function bind_testimonials() {
+
+setInterval(() => {
+  if (pt1.classList.contains("pointing")) {
+    togglePointer(toggle, pt2);
+  } else {
+    togglePointer(toggle, pt1);
+  }
   if (pt1.classList.contains("pointing")) {
     remove_existing(t1, "hidden");
     t2.classList.add("hidden");
@@ -206,4 +211,4 @@ function bind_testimonials() {
     remove_existing(t2, "hidden");
     t1.classList.add("hidden");
   }
-}
+}, 3500);
