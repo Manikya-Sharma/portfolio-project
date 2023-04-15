@@ -31,9 +31,9 @@ function openHamburger(hmb) {
     "duration-100"
   );
   mentorship.textContent = "Mentorship";
-  mentorship.addEventListener("click", ()=>{
-    location.href="./mentorship.html"
-  })
+  mentorship.addEventListener("click", () => {
+    location.href = "./mentorship.html";
+  });
 
   const navOptions = document.createElement("div");
   navOptions.classList.add("options", "w-full");
@@ -83,6 +83,40 @@ mnt_hmb.addEventListener("click", () => {
     }
   }
 });
+
+// responsiveness
+function give_bottom_margin(container) {
+  // to absolute div
+  remove_existing(container, "top");
+  const parent_height = container.parentNode.clientHeight;
+  const required_height = parent_height - 100;
+  container.classList.add(`top-[${required_height}px]`);
+}
+function center_absolute(container) {
+  remove_existing(container, "left");
+  const parent_width = container.parentNode.clientWidth;
+  const self_width = container.clientWidth;
+  container.classList.add(`left-[${(parent_width - self_width) / 2}px]`);
+}
+function add_bottom_margin(container) {
+  // to relative div
+  const parent = container.parentNode;
+  remove_existing(parent, "mb");
+  bottom_length = container.clientHeight;
+  parent.classList.add(`mb-[${bottom_length}px]`);
+}
+
+function about_me() {
+  const about_container = document.querySelector(".about-me");
+  give_bottom_margin(about_container);
+  center_absolute(about_container);
+  add_bottom_margin(about_container);
+}
+
+window.addEventListener("resize", () => {
+  about_me();
+});
+about_me();
 
 // testimonials
 
