@@ -214,4 +214,4 @@ setInterval(() => {
     remove_existing(t2, "hidden");
     t1.classList.add("hidden");
   }
-}, 3500);
+}, 5500);

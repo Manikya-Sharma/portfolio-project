@@ -205,7 +205,7 @@ setInterval(() => {
     togglePointer(mnt_toggle, pt3);
   } else if (pt3.classList.contains("pointing")) {
     togglePointer(mnt_toggle, pt4);
-  } else if (pt3.classList.contains("pointing")) {
+  } else if (pt4.classList.contains("pointing")) {
     togglePointer(mnt_toggle, pt5);
   } else {
     togglePointer(mnt_toggle, mnt_pt1);
@@ -241,4 +241,4 @@ setInterval(() => {
     t3.classList.add("hidden");
     t4.classList.add("hidden");
   }
-}, 3500);
+}, 5500);
