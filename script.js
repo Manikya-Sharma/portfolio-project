@@ -33,9 +33,9 @@ function openHamburger(hmb) {
     "duration-100"
   );
   mentorship.textContent = "Mentorship";
-  mentorship.addEventListener("click", ()=>{
-    location.href="./mentorship.html"
-  })
+  mentorship.addEventListener("click", () => {
+    location.href = "./mentorship.html";
+  });
 
   const navOptions = document.createElement("div");
   navOptions.classList.add("options", "w-full");
@@ -214,4 +214,4 @@ setInterval(() => {
     remove_existing(t2, "hidden");
     t1.classList.add("hidden");
   }
-}, 3500);
+}, 5500);
