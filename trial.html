@@ -1,212 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="./mentorship-code.js" defer></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="text-fuchsia-200">
-      <div class="container mx-auto px-5 py-24">
-        <div class="parent-testimonials flex">
-          <div class="w-full p-4">
-            <div
-              class="mx-auto h-full max-w-2xl rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-black/30"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="mb-4 block h-5 w-5 text-white"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                ></path>
-              </svg>
-              <p class="mb-6 text-lg leading-relaxed md:text-center">
-                Matt always offered insightful suggestions on the work I
-                produced and challenged me with questions I had not considered.
-                He is an incredible mentor, designer, and person.
-              </p>
-              <a class="inline-flex items-center md:mx-auto md:flex md:w-fit">
-                <img
-                  alt="testimonial"
-                  src="./mentorship-images/dalrae.png"
-                  class="h-16 w-16 flex-shrink-0 rounded-full object-cover object-center"
-                />
-                <span class="flex flex-grow flex-col pl-4">
-                  <span class="title-font text-xl font-medium text-white"
-                    >Dalrae Kim</span
-                  >
-                  <span class="text-md text-white">UX Desiger, Indeed</span>
-                </span>
-              </a>
-            </div>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Slider</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper pt-10">
+      <div class="swiper-slide w-[20rem] mx-auto">
+        <div class="md:w-[20rem] md:mx-auto md:border bg-gradient-to-b from-[#6e07f3] to-fuchsia-600">
+          <div class="pt-10">
+            <img src="./projects-images/Authenticity.svg" alt="Error Loading" class="w-16 pt-3 pb-3 pr-3 pl-3 mx-auto border rounded-full overflow-hidden bg-[#5be9b9] border-[#5be9b9]">
           </div>
-          <div class="hidden w-full p-4">
-            <div
-              class="mx-auto h-full max-w-2xl rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-black/30"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="mb-4 block h-5 w-5 text-white"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                ></path>
-              </svg>
-              <p class="mb-6 text-lg leading-relaxed md:text-center">
-                Matt’s passion for design and unique perspective constantly
-                pushed my problem-solving abilities. He's a master of his craft,
-                and genuinely cares about the people he mentors.
-              </p>
-              <a class="inline-flex items-center md:mx-auto md:flex md:w-fit">
-                <img
-                  alt="testimonial"
-                  src="./mentorship-images/jenann.png"
-                  class="h-16 w-16 flex-shrink-0 rounded-full object-cover object-center"
-                />
-                <span class="flex flex-grow flex-col pl-4">
-                  <span class="title-font text-xl font-medium text-white"
-                    >Jenann Pham</span
-                  >
-                  <span class="text-md text-white"
-                    >Design Consultant, Freelance</span
-                  >
-                </span>
-              </a>
-            </div>
+          <div class="text-2xl font-bold text-center pt-8">Authenticity</div>
+          <div class="text-center px-9 pb-14 pt-7">No sugar-coated critiques here. I care about your growth
+            too
+            much
+            to not keep it real. We'll tear things down and rebuild them better, together.</div>
+        </div>
+      </div>
+      <div class="swiper-slide md:w-[20rem]">
+        <div
+          class="md:w-[20rem] md:mx-auto md:border bg-gradient-to-b from-[#6e07f3] to-fuchsia-600">
+          <div class="pt-10">
+            <img src="./projects-images/Humility.svg" alt="Error Loading"
+              class="w-16 pt-3 pb-3 pr-3 pl-3 mx-auto border rounded-full overflow-hidden bg-[#5be9b9] border-[#5be9b9]">
           </div>
-          <div class="hidden w-full p-4">
-            <div
-              class="mx-auto h-full max-w-2xl rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-black/30"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="mb-4 block h-5 w-5 text-white"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                ></path>
-              </svg>
-              <p class="mb-6 text-lg leading-relaxed md:text-center">
-                Matt not only opened doors for me in my career, but did so with
-                a smile and an easy-going personality. He has serious grit, and
-                if you spend enough time with him, you will too.
-              </p>
-              <a class="inline-flex items-center md:mx-auto md:flex md:w-fit">
-                <img
-                  alt="testimonial"
-                  src="./mentorship-images/jonathan.png"
-                  class="h-16 w-16 flex-shrink-0 rounded-full object-cover object-center"
-                />
-                <span class="flex flex-grow flex-col pl-4">
-                  <span class="title-font text-xl font-medium text-white"
-                    >Jonathan Maimon</span
-                  >
-                  <span class="text-md text-white"
-                    >User Researcher, Coinbase</span
-                  >
-                </span>
-              </a>
-            </div>
+          <div class="text-2xl font-bold text-center pt-8">Humility</div>
+          <div class="text-center px-9 pb-14 pt-7">I don’t profess to be at the top of the design talent
+            pool,
+            because I know there is still much for me to master. Design is a moving target I'm
+            hunting
+            every
+            day.</div>
+        </div>
+      </div>
+      <div class="swiper-slide md:w-[20rem]">
+        <div
+          class="md:w-[20rem] md:mx-auto md:border bg-gradient-to-b from-[#6e07f3] to-fuchsia-600">
+          <div class="pt-10">
+            <img src="./projects-images/Equality.svg" alt="Error Loading"
+              class="w-16 pt-3 pb-3 pr-3 pl-3 mx-auto border rounded-full overflow-hidden bg-[#5be9b9] border-[#5be9b9]">
           </div>
-          <div class="hidden w-full p-4">
-            <div
-              class="mx-auto h-full max-w-2xl rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-black/30"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="mb-4 block h-5 w-5 text-white"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                ></path>
-              </svg>
-              <p class="mb-6 text-lg leading-relaxed md:text-center">
-                Matt believed in me before I believed in myself as a designer,
-                and I am ever grateful for his unwavering support in my growth
-                and development as a freelancer and design educator.
-              </p>
-              <a class="inline-flex items-center md:mx-auto md:flex md:w-fit">
-                <img
-                  alt="testimonial"
-                  src="./mentorship-images/erika.png"
-                  class="h-16 w-16 flex-shrink-0 rounded-full object-cover object-center"
-                />
-                <span class="flex flex-grow flex-col pl-4">
-                  <span class="title-font text-xl font-medium text-white"
-                    >Erika Harano</span
-                  >
-                  <span class="text-md text-white">UX Designer, Freelance</span>
-                </span>
-              </a>
-            </div>
+          <div class="text-2xl font-bold text-center pt-8">Equality</div>
+          <div class="text-center px-9 pb-14 pt-7">To me, you're more than just a mentee. You’re a designer
+            — an
+            industry peer. I’m not the only one teaching and you’re not the only one learning.</div>
+        </div>
+      </div>
+      <div class="swiper-slide md:w-[20rem]">
+        <div
+          class="md:w-[20rem] md:mx-auto md:border bg-gradient-to-b from-[#6e07f3] to-fuchsia-600">
+          <div class="pt-10">
+            <img src="./projects-images/Transparency.svg" alt="Error Loading"
+              class="w-16 pt-3 pb-3 pr-3 pl-3 mx-auto border rounded-full overflow-hidden bg-[#5be9b9] border-[#5be9b9]">
           </div>
-          <div class="hidden w-full p-4">
-            <div
-              class="mx-auto h-full max-w-2xl rounded-xl bg-gradient-to-b from-[#6e07f3] to-fuchsia-600 p-8 transition-all duration-300 hover:shadow-xl hover:shadow-black/30"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="currentColor"
-                class="mb-4 block h-5 w-5 text-white"
-                viewBox="0 0 975.036 975.036"
-              >
-                <path
-                  d="M925.036 57.197h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.399 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l36 76c11.6 24.399 40.3 35.1 65.1 24.399 66.2-28.6 122.101-64.8 167.7-108.8 55.601-53.7 93.7-114.3 114.3-181.9 20.601-67.6 30.9-159.8 30.9-276.8v-239c0-27.599-22.401-50-50-50zM106.036 913.497c65.4-28.5 121-64.699 166.9-108.6 56.1-53.7 94.4-114.1 115-181.2 20.6-67.1 30.899-159.6 30.899-277.5v-239c0-27.6-22.399-50-50-50h-304c-27.6 0-50 22.4-50 50v304c0 27.601 22.4 50 50 50h145.5c-1.9 79.601-20.4 143.3-55.4 191.2-27.6 37.8-69.4 69.1-125.3 93.8-25.7 11.3-36.8 41.7-24.8 67.101l35.9 75.8c11.601 24.399 40.501 35.2 65.301 24.399z"
-                ></path>
-              </svg>
-              <p class="mb-6 text-lg leading-relaxed md:text-center">
-                Matt greatly impacted my growth as a designer. He took the time
-                to really understand where I was at in my career and provided
-                guidance to help fill gaps in my knowledge.
-              </p>
-              <a class="inline-flex items-center md:mx-auto md:flex md:w-fit">
-                <img
-                  alt="testimonial"
-                  src="./mentorship-images/arnold.png"
-                  class="h-16 w-16 flex-shrink-0 rounded-full object-cover object-center"
-                />
-                <span class="flex flex-grow flex-col pl-4">
-                  <span class="title-font text-xl font-medium text-white"
-                    >Arnold Rosario</span
-                  >
-                  <span class="text-md text-white"
-                    >UX Designer, Smartsheet</span
-                  >
-                </span>
-              </a>
-            </div>
+          <div class="text-2xl font-bold text-center pt-8">Transparency</div>
+          <div class="text-center px-9 pb-14 pt-7">I don’t have all the answers, but I’m happy to
+            point
+            you
+            towards useful resources and share what I've learned from my own personal design
+            journey.
           </div>
         </div>
-        <div class="slider mx-auto mt-10 flex w-fit gap-5">
-          <div
-            class="pointing h-5 w-5 cursor-pointer rounded-full border-2 border-black transition-colors duration-300"
-          ></div>
-          <div
-            class="h-5 w-5 cursor-pointer rounded-full border-2 border-black transition-colors duration-300"
-          ></div>
-          <div
-            class="h-5 w-5 cursor-pointer rounded-full border-2 border-black transition-colors duration-300"
-          ></div>
-          <div
-            class="h-5 w-5 cursor-pointer rounded-full border-2 border-black transition-colors duration-300"
-          ></div>
-          <div
-            class="h-5 w-5 cursor-pointer rounded-full border-2 border-black transition-colors duration-300"
-          ></div>
+      </div>
+      <div class="swiper-slide md:w-[20rem]">
+        <div
+          class="md:w-[20rem] md:mx-auto md:border bg-gradient-to-b from-[#6e07f3] to-fuchsia-600">
+          <div class="pt-10">
+            <img src="./projects-images/Authenticity.svg" alt="Error Loading"
+              class="w-16 pt-3 pb-3 pr-3 pl-3 mx-auto border rounded-full overflow-hidden bg-[#5be9b9] border-[#5be9b9]">
+          </div>
+          <div class="text-2xl font-bold text-center pt-8">Authenticity</div>
+          <div class="text-center px-9 pb-14 pt-7">No sugar-coated critiques here. I care about your growth
+            too
+            much
+            to not keep it real. We'll tear things down and rebuild them better, together.
+          </div>
         </div>
       </div>
     </div>
-  </body>
+    <div class="swiper-pagination"></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="./trial.js"></script>
+</body>
+
 </html>
