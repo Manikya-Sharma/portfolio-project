@@ -150,10 +150,6 @@ function startup() {
   add_bottom_margin(startup_container);
 }
 
-window.addEventListener("resize", () => {
-  about_me();
-  startup();
-});
 about_me();
 startup();
 
@@ -211,7 +207,10 @@ toggle.addEventListener("click", () => {
   }
 });
 
+
 window.addEventListener("resize", () => {
+  about_me();
+  startup();
   if (window.innerWidth < "768") {
     setInterval(() => {
       if (pt1.classList.contains("pointing")) {
@@ -227,13 +226,6 @@ window.addEventListener("resize", () => {
         t1.style.display = "none";
       }
     }, 5500);
-  } else {
-    setInterval(() => {
-      t1.style.display = "block";
-      t2.style.display = "block";
-    }, 100);
-    t1.style.display = "block";
-    t2.style.display = "block";
   }
   // small glitch if sized to small screen then again large but quite irrelevant in most cases
 });
