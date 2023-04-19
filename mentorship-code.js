@@ -5,59 +5,68 @@ function openHamburger(hmb) {
   hmb.classList.add("opened");
 
   const sayHello = document.createElement("li");
-  sayHello.classList.add(
-    "hover:text-[#6e07f3]",
-    "font-bold",
-    "cursor-pointer",
-    "text-gray-800",
-    "font-sans",
-    "font-medium",
-    "transition-all",
-    "duration-100"
-  );
+  sayHello.addEventListener("mouseover", () => {
+    sayHello.style.color = "rgb(110, 7, 243)";
+  });
+  sayHello.addEventListener("mouseout", () => {
+    sayHello.style.color = "rgb(31,41,55)";
+  });
+  sayHello.style.cursor = "pointer";
+  sayHello.style.color = "rgb(31,41,55)";
+  sayHello.style.fontWeight = "500";
+  sayHello.style.fontStyle = "font-sans";
+  sayHello.style.transitionProperty = "all";
+  sayHello.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
+  sayHello.style.transitionDuration = "100ms";
+  sayHello.textContent = "Say Hello";
   sayHello.addEventListener("click", () => {
     location.href = "./sign-up-code.html";
   });
-  sayHello.textContent = "Say Hello";
   const mentorship = document.createElement("li");
-  mentorship.classList.add(
-    "hover:text-[#6e07f3]",
-    "font-bold",
-    "cursor-pointer",
-    "text-gray-800",
-    "font-sans",
-    "font-medium",
-    "transition-all",
-    "duration-100"
-  );
+  mentorship.addEventListener("mouseover", () => {
+    mentorship.style.color = "rgb(110, 7, 243)";
+  });
+  mentorship.addEventListener("mouseout", () => {
+    mentorship.style.color = "rgb(31,41,55)";
+  });
+  mentorship.style.cursor = "pointer";
+  mentorship.style.color = "rgb(31,41,55)";
+  mentorship.style.fontWeight = "500";
+  mentorship.style.fontStyle = "font-sans";
+  mentorship.style.transitionProperty = "all";
+  mentorship.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
+  mentorship.style.transitionDuration = "100ms";
   mentorship.textContent = "Mentorship";
   mentorship.addEventListener("click", () => {
     location.href = "./mentorship.html";
   });
 
   const navOptions = document.createElement("div");
-  navOptions.classList.add("options", "w-full");
+  navOptions.classList.add("options");
+  navOptions.style.width = "100%";
 
   const containerList = document.createElement("ul");
-  containerList.classList.add(
-    "flex",
-    "flex-col",
-    "gap-3",
-    "mx-auto",
-    "mt-5",
-    "py-4",
-    "px-[100px]",
-    "shadow-md",
-    "shadow-black/30",
-    "block",
-    "w-fit",
-    "bg-slate-300",
-    "rounded-lg",
-    "transition-all",
-    "duration-200",
-    "hover:shadow-black/50",
-    "text-center"
-  );
+  containerList.style.margin = "0 auto";
+  containerList.style.marginTop = "1.25rem";
+  containerList.style.padding = "10px 1rem";
+  containerList.style.width = "80%";
+  containerList.style.height = "fit-content";
+  containerList.style.display = "flex";
+  containerList.style.flexDirection = "column";
+  containerList.style.gap = "0.75rem";
+  containerList.style.background = "rgb(203 213 225)";
+  containerList.style.borderRadius = "0.5rem";
+  containerList.style.transitionProperty = "all";
+  containerList.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
+  containerList.style.transitionDuration = "200ms";
+  containerList.style.textAlign = "center";
+  containerList.style.boxShadow = "7px 10px 2px #888888";
+  containerList.addEventListener("mouseover", () => {
+    containerList.style.boxShadow = "7px 10px 2px #555555";
+  });
+  containerList.addEventListener("mouseout", () => {
+    containerList.style.boxShadow = "7px 10px 2px #888888";
+  });
   containerList.appendChild(mentorship);
   containerList.appendChild(sayHello);
 
@@ -71,39 +80,44 @@ function closeHamburger(hmb) {
   options = document.querySelector(".options");
   options.remove();
 }
-const mnt_hmb = document.querySelector(".hamburger");
-mnt_hmb.addEventListener("click", () => {
-  for (const _class of mnt_hmb.classList) {
+const hmb = document.querySelector(".hamburger");
+hmb.addEventListener("click", () => {
+  for (const _class of hmb.classList) {
     if (_class.match("closed")) {
-      openHamburger(mnt_hmb);
+      openHamburger(hmb);
       break;
     } else if (_class.match("opened")) {
-      closeHamburger(mnt_hmb);
+      closeHamburger(hmb);
       break;
     }
   }
 });
 
 // responsiveness
+function remove_existing(container, cls) {
+  for (const _class of container.classList) {
+    if (_class.match(cls)) {
+      container.classList.remove(_class);
+    }
+  }
+}
+
 function give_bottom_margin(container) {
   // to absolute div
-  remove_existing(container, "top");
   const parent_height = container.parentNode.clientHeight;
   const required_height = parent_height - 100;
-  container.classList.add(`top-[${required_height}px]`);
+  container.style.top = `${required_height}px`;
 }
 function center_absolute(container) {
-  remove_existing(container, "left");
   const parent_width = container.parentNode.clientWidth;
   const self_width = container.clientWidth;
-  container.classList.add(`left-[${(parent_width - self_width) / 2}px]`);
+  container.style.left = `${(parent_width - self_width) / 2}px`;
 }
 function add_bottom_margin(container) {
   // to relative div
   const parent = container.parentNode;
-  remove_existing(parent, "mb");
   bottom_length = container.clientHeight;
-  parent.classList.add(`mb-[${bottom_length}px]`);
+  parent.style.marginBottom = `${bottom_length}px`;
 }
 
 function about_me() {
@@ -120,14 +134,6 @@ about_me();
 
 // testimonials
 
-function remove_existing(container, cls) {
-  for (const _class of container.classList) {
-    if (_class.match(cls)) {
-      container.classList.remove(_class);
-    }
-  }
-}
-
 function togglePointer(toggle, pt) {
   const pt1 = toggle.firstElementChild;
   const pt2 = pt1.nextElementSibling;
@@ -137,24 +143,34 @@ function togglePointer(toggle, pt) {
 
   if (pt1.classList.contains("pointing")) {
     remove_existing(pt1, "pointing");
-    remove_existing(pt1, "bg");
-    remove_existing(pt1, "border-none");
+    pt1.style.border = "solid";
+    pt1.style.background = "white";
+    pt1.style.borderWidth = "2px";
+    pt1.style.borderColor = "rgb(0,0,0)";
   } else if (pt2.classList.contains("pointing")) {
     remove_existing(pt2, "pointing");
-    remove_existing(pt2, "bg");
-    remove_existing(pt2, "border-none");
+    pt2.style.border = "solid";
+    pt2.style.background = "white";
+    pt2.style.borderWidth = "2px";
+    pt2.style.borderColor = "rgb(0,0,0)";
   } else if (pt3.classList.contains("pointing")) {
     remove_existing(pt3, "pointing");
-    remove_existing(pt3, "bg");
-    remove_existing(pt3, "border-none");
+    pt3.style.border = "solid";
+    pt3.style.background = "white";
+    pt3.style.borderWidth = "2px";
+    pt3.style.borderColor = "rgb(0,0,0)";
   } else if (pt4.classList.contains("pointing")) {
     remove_existing(pt4, "pointing");
-    remove_existing(pt4, "bg");
-    remove_existing(pt4, "border-none");
+    pt4.style.border = "solid";
+    pt4.style.background = "white";
+    pt4.style.borderWidth = "2px";
+    pt4.style.borderColor = "rgb(0,0,0)";
   } else {
     remove_existing(pt5, "pointing");
-    remove_existing(pt5, "bg");
-    remove_existing(pt5, "border-none");
+    pt5.style.border = "solid";
+    pt5.style.background = "white";
+    pt5.style.borderWidth = "2px";
+    pt5.style.borderColor = "rgb(0,0,0)";
   }
   if (!pt.classList.contains("pointing")) {
     pt.classList.add("pointing");
@@ -164,7 +180,8 @@ function togglePointer(toggle, pt) {
 
 function updatePointer() {
   const pointer = document.querySelector(".pointing");
-  pointer.classList.add("bg-[#6e07f3]", "border-none");
+  pointer.style.background = "#6e07f3";
+  pointer.style.border = "none";
 }
 
 const mnt_toggle = document.querySelector(".slider");
@@ -200,35 +217,35 @@ const t5 = t4.nextElementSibling;
 
 mnt_toggle.addEventListener("click", () => {
   if (mnt_pt1.classList.contains("pointing")) {
-    remove_existing(mnt_t1, "hidden");
-    mnt_t2.classList.add("hidden");
-    t3.classList.add("hidden");
-    t4.classList.add("hidden");
-    t5.classList.add("hidden");
+    mnt_t1.style.display = "block";
+    mnt_t2.style.display = "none";
+    t3.style.display = "none";
+    t4.style.display = "none";
+    t5.style.display = "none";
   } else if (mnt_pt2.classList.contains("pointing")) {
-    remove_existing(mnt_t2, "hidden");
-    mnt_t1.classList.add("hidden");
-    t3.classList.add("hidden");
-    t4.classList.add("hidden");
-    t5.classList.add("hidden");
+    mnt_t2.style.display = "block";
+    mnt_t1.style.display = "none";
+    t3.style.display = "none";
+    t4.style.display = "none";
+    t5.style.display = "none";
   } else if (pt3.classList.contains("pointing")) {
-    remove_existing(t3, "hidden");
-    mnt_t1.classList.add("hidden");
-    mnt_t2.classList.add("hidden");
-    t4.classList.add("hidden");
-    t5.classList.add("hidden");
+    t3.style.display = "block";
+    mnt_t1.style.display = "none";
+    mnt_t2.style.display = "none";
+    t4.style.display = "none";
+    t5.style.display = "none";
   } else if (pt4.classList.contains("pointing")) {
-    remove_existing(t4, "hidden");
-    mnt_t1.classList.add("hidden");
-    mnt_t2.classList.add("hidden");
-    t3.classList.add("hidden");
-    t5.classList.add("hidden");
+    t4.style.display = "block";
+    mnt_t1.style.display = "none";
+    mnt_t2.style.display = "none";
+    t3.style.display = "none";
+    t5.style.display = "none";
   } else {
-    remove_existing(t5, "hidden");
-    mnt_t1.classList.add("hidden");
-    mnt_t2.classList.add("hidden");
-    t3.classList.add("hidden");
-    t4.classList.add("hidden");
+    t5.style.display = "block";
+    mnt_t1.style.display = "none";
+    mnt_t2.style.display = "none";
+    t3.style.display = "none";
+    t4.style.display = "none";
   }
 });
 
@@ -245,35 +262,35 @@ setInterval(() => {
     togglePointer(mnt_toggle, mnt_pt1);
   }
   if (mnt_pt1.classList.contains("pointing")) {
-    remove_existing(mnt_t1, "hidden");
-    mnt_t2.classList.add("hidden");
-    t3.classList.add("hidden");
-    t4.classList.add("hidden");
-    t5.classList.add("hidden");
+    mnt_t1.style.display = "block";
+    mnt_t2.style.display = "none";
+    t3.style.display = "none";
+    t4.style.display = "none";
+    t5.style.display = "none";
   } else if (mnt_pt2.classList.contains("pointing")) {
-    remove_existing(mnt_t2, "hidden");
-    mnt_t1.classList.add("hidden");
-    t3.classList.add("hidden");
-    t4.classList.add("hidden");
-    t5.classList.add("hidden");
+    mnt_t2.style.display = "block";
+    mnt_t1.style.display = "none";
+    t3.style.display = "none";
+    t4.style.display = "none";
+    t5.style.display = "none";
   } else if (pt3.classList.contains("pointing")) {
-    remove_existing(t3, "hidden");
-    mnt_t1.classList.add("hidden");
-    mnt_t2.classList.add("hidden");
-    t4.classList.add("hidden");
-    t5.classList.add("hidden");
+    t3.style.display = "block";
+    mnt_t1.style.display = "none";
+    mnt_t2.style.display = "none";
+    t4.style.display = "none";
+    t5.style.display = "none";
   } else if (pt4.classList.contains("pointing")) {
-    remove_existing(t4, "hidden");
-    mnt_t1.classList.add("hidden");
-    mnt_t2.classList.add("hidden");
-    t3.classList.add("hidden");
-    t5.classList.add("hidden");
+    t4.style.display = "block";
+    mnt_t1.style.display = "none";
+    mnt_t2.style.display = "none";
+    t3.style.display = "none";
+    t5.style.display = "none";
   } else {
-    remove_existing(t5, "hidden");
-    mnt_t1.classList.add("hidden");
-    mnt_t2.classList.add("hidden");
-    t3.classList.add("hidden");
-    t4.classList.add("hidden");
+    t5.style.display = "block";
+    mnt_t1.style.display = "none";
+    mnt_t2.style.display = "none";
+    t3.style.display = "none";
+    t4.style.display = "none";
   }
 }, 5500);
 
