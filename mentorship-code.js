@@ -310,3 +310,25 @@ var swiper = new Swiper(".mySwiper", {
     el: ".swiper-pagination",
   },
 });
+
+// NavBar
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+let prevScrollPos = window.scrollY;
+window.onscroll = function () {
+  const navBar = document.getElementsByTagName("nav")[0];
+  const currentScrollPos = window.scrollY;
+  // background change
+  if (currentScrollPos > 200) {
+    navBar.style.backgroundColor = "rgba(255,255,255,0.4)";
+    // navBar.style.backgroundColor = "black"
+  } else {
+    navBar.style.backgroundColor = "unset";
+  }
+  // scroll again
+  if (prevScrollPos > currentScrollPos) {
+    navBar.style.top = "0";
+  } else {
+    navBar.style.top = "-300px";
+  }
+  prevScrollPos = currentScrollPos;
+};
