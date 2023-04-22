@@ -8,6 +8,8 @@
   <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
   <link rel="icon" href="./intro-images/logo.png" />
   <script src="https://cdn.tailwindcss.com"></script>
+  <!--AOS-->
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <title>Mentorship</title>
   <script src="./mentorship-code.js" defer></script>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
@@ -15,32 +17,35 @@
 
 <body>
   <div class="w-full">
-    <div>
-      <div class="flex justify-around">
-        <div class="ml-8 mt-[3.2rem] min-w-[60px] grow-0 md:ml-14">
-          <a href="./index.html"><img src="./intro-images/logo.png"
-              class="h-[52px] w-[52px] sm:h-[40px] sm:w-[40px] md:h-[60px] md:w-[60px]" /></a>
-        </div>
-
-        <div class="Buttons md:grow-1 ml-auto mt-[3rem] text-[18px] md:mr-[8px]">
-          <div class="hidden md:flex">
-            <button class="mr-6 mt-2 font-medium text-gray-800 transition-all duration-300 hover:text-[#6e07f3]">
-              <a href="./mentorship.html"> Mentorship </a>
-            </button>
-
-            <div class="mt-2">
-              <a href="sign-up-code.html"><button
-                  class="text-centre mr-10 h-[45px] w-[113px] rounded-l-full rounded-r-full border-2 border-[#6e07f3] px-[6px] pl-2 font-semibold text-[#6e07f3] transition-all duration-300 hover:bg-[#6e07f3] hover:text-[#ffffff]">
-                  Say Hello
-                </button></a>
-            </div>
+    <div class="mb-10 md:mb-16">
+      <nav class="fixed top-0 z-20 w-[100%] backdrop-blur-sm transition-[top] duration-300">
+        <div class="flex justify-around">
+          <div class="ml-8 mt-[3.2rem] min-w-[60px] grow-0 md:ml-14">
+            <a href="./index.html"><img src="./intro-images/logo.svg"
+                class="h-[52px] w-[52px] sm:h-[40px] sm:w-[40px] md:h-[60px] md:w-[60px]" /></a>
           </div>
-          <button
-            class="hamburger closed duration-800 ml-6 mr-14 block text-[25px] font-light text-gray-800 transition-all sm:text-[30px] md:collapse">
-            ≡
-          </button>
+
+          <div class="Buttons md:grow-1 ml-auto mt-[3rem] text-[18px] md:mr-[8px]">
+            <div class="hidden md:flex">
+              <button
+                class="redirect-mentorship mr-6 mt-2 font-medium text-gray-800 transition-all duration-300 hover:text-[#6e07f3]">
+                <a href="./mentorship.html"> Mentorship </a>
+              </button>
+
+              <div class="mt-2">
+                <a href="sign-up-code.html"><button
+                    class="max-say-hello text-centre mr-10 h-[45px] w-[113px] rounded-l-full rounded-r-full border-2 border-[#6e07f3] px-[6px] pl-2 font-semibold text-[#6e07f3] shadow-white/80 drop-shadow-lg transition-all duration-300 hover:bg-[#6e07f3] hover:text-[#ffffff]">
+                    Say Hello
+                  </button></a>
+              </div>
+            </div>
+            <button
+              class="hamburger closed duration-800 ml-6 mr-14 block text-[25px] font-light text-gray-800 transition-all sm:text-[30px] md:collapse">
+              ≡
+            </button>
+          </div>
         </div>
-      </div>
+      </nav>
     </div>
 
     <div class="ml-2 flex-row px-12 pt-12 leading-none md:leading-normal">
@@ -101,7 +106,8 @@
             </h4>
             <p class="mb-10 text-[18px] md:text-[18px]">All Designers</p>
             <button
-              class="text-centre w-[250px] rounded-l-full rounded-r-full border-2 border-[#141c3a] bg-[#141c3a] px-[30px] py-[6px] font-sans text-xl text-[#5BE9B9] md:w-[300px] md:px-[40px] md:py-[10px]">
+              class="text-centre w-[250px] rounded-l-full rounded-r-full border-2 border-[#141c3a] bg-[#141c3a] px-[30px] py-[6px] font-sans text-xl text-[#5BE9B9] md:w-[300px] md:px-[40px] md:py-[10px]"
+              data-aos="zoom-in-right" data-aos-duration="200">
               Book a session
             </button>
           </div>
@@ -133,7 +139,8 @@
               Experienced Designer
             </p>
             <button
-              class="text-centre w-[250px] rounded-l-full rounded-r-full border-2 border-[#141c3a] bg-[#141c3a] px-[30px] py-[6px] font-sans text-xl text-[#5BE9B9] md:w-[300px] md:px-[40px] md:py-[10px]">
+              class="text-centre w-[250px] rounded-l-full rounded-r-full border-2 border-[#141c3a] bg-[#141c3a] px-[30px] py-[6px] font-sans text-xl text-[#5BE9B9] md:w-[300px] md:px-[40px] md:py-[10px]"
+              data-aos="zoom-in-up" data-aos-duration="200">
               Improve your chops
             </button>
           </div>
@@ -162,7 +169,8 @@
             </h4>
             <p class="mb-10 text-[18px] md:text-[18px]">New Designer</p>
             <button
-              class="text-centre w-[250px] rounded-l-full rounded-r-full border-2 border-[#141c3a] bg-[#141c3a] px-[30px] py-[6px] font-sans text-xl text-[#5BE9B9] md:w-[300px] md:px-[40px] md:py-[10px]">
+              class="text-centre w-[250px] rounded-l-full rounded-r-full border-2 border-[#141c3a] bg-[#141c3a] px-[30px] py-[6px] font-sans text-xl text-[#5BE9B9] md:w-[300px] md:px-[40px] md:py-[10px]"
+              data-aos="zoom-in-left" data-aos-duration="200">
               Start your journey
             </button>
           </div>
@@ -199,35 +207,35 @@
           career, and I'm committed to helping you make use of that knowledge.
         </div>
         <div class="md:flex md:justify-between md:pt-10">
-          <div class="md:pt-4">
+          <div class="md:pt-4" data-aos="flip-up" data-aos-duration="600">
             <img src="./projects-images/tools.png" alt="Error Loading" class="mx-auto w-16 pt-12" />
             <div class="pt-5 text-center text-xl font-bold">Tools</div>
             <div class="px-5 pt-5 text-center text-lg md:text-base">
               I'll help you build confidence and skill in your design tools.
             </div>
           </div>
-          <div class="">
+          <div class="" data-aos="flip-down" data-aos-duration="300">
             <img src="./projects-images/resources.png" alt="Error Loading" class="mx-auto w-14 pt-12" />
             <div class="pt-5 text-center text-xl font-bold">Resources</div>
             <div class="px-5 pt-5 text-center text-lg md:text-base">
               I'll point you towards informative content to learn from.
             </div>
           </div>
-          <div class="">
+          <div class="" data-aos="flip-up" data-aos-duration="600">
             <img src="./projects-images/networking.png" alt="Error Loading" class="mx-auto w-[4.8rem] pt-12" />
             <div class="pt-5 text-center text-xl font-bold">Networking</div>
             <div class="px-5 pt-5 text-center text-lg md:text-base">
               I'll connect you with other pros to expand your reach.
             </div>
           </div>
-          <div class="md:pt-3">
+          <div class="md:pt-3" data-aos="flip-down" data-aos-duration="300">
             <img src="./projects-images/opportunity.png" alt="Error Loading" class="mx-auto w-16 pt-12" />
             <div class="pt-5 text-center text-xl font-bold">Opportunity</div>
             <div class="px-5 pt-5 text-center text-lg md:text-base">
               I'll make introductions and help you source potential work.
             </div>
           </div>
-          <div class="">
+          <div class="" data-aos="flip-up" data-aos-duration="600">
             <img src="./projects-images/growth.png" alt="Error Loading" class="mx-auto w-14 pt-12" />
             <div class="pt-5 text-center text-xl font-bold">Growth</div>
             <div class="px-5 pt-5 text-center text-lg md:text-base">
@@ -249,14 +257,22 @@
           And many have worked for high profile companies
         </div>
         <div class="companies grid grid-cols-2 gap-4 pb-16 md:grid md:grid-cols-4 md:pb-32">
-          <img src="./projects-images/facebook.svg" alt="Error Loading" class="w-40 md:w-72" />
-          <img src="./projects-images/netflix.svg" alt="Error Loading" class="w-40 md:w-72" />
-          <img src="./projects-images/sony.svg" alt="Error Loading" class="w-40 md:w-72" />
-          <img src="./projects-images/microsoft.svg" alt="Error Loading" class="w-40 md:w-72" />
-          <img src="./projects-images/thumbtack.svg" alt="Error Loading" class="w-40 md:w-72" />
-          <img src="./projects-images/clover.svg" alt="Error Loading" class="w-40 md:w-72" />
-          <img src="./projects-images/indeed.svg" alt="Error Loading" class="w-40 md:w-72" />
-          <img src="./projects-images/yelp.svg" alt="Error Loading" class="w-40 md:w-72" />
+          <img src="./projects-images/facebook.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-left"
+            data-aos-duration="300" />
+          <img src="./projects-images/netflix.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-right"
+            data-aos-duration="500" />
+          <img src="./projects-images/sony.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-left"
+            data-aos-duration="300" />
+          <img src="./projects-images/microsoft.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-right"
+            data-aos-duration="500" />
+          <img src="./projects-images/thumbtack.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-left"
+            data-aos-duration="300" />
+          <img src="./projects-images/clover.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-right"
+            data-aos-duration="500" />
+          <img src="./projects-images/indeed.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-left"
+            data-aos-duration="300" />
+          <img src="./projects-images/yelp.svg" alt="Error Loading" class="w-40 md:w-72" data-aos="flip-right"
+            data-aos-duration="500" />
         </div>
       </div>
       <hr class="w-2 bg-black" />
@@ -513,7 +529,8 @@
     <div class="mt-2 bg-gradient-to-b from-white to-[#6f00ff] pt-10 sm:mt-5">
       <div class="mx-auto mt-16 w-80 md:mt-28 md:w-fit">
         <div
-          class="items-center rounded-xl bg-[#141c3a] pb-16 text-center md:flex md:justify-between md:gap-24 md:pr-16 md:pt-4 md:pb-4 md:align-middle">
+          class="items-center rounded-xl bg-[#141c3a] pb-16 text-center md:flex md:justify-between md:gap-24 md:pr-16 md:pt-4 md:pb-4 md:align-middle"
+          data-aos="zoom-out-up" data-aos-duration="700">
           <h1 class="pt-12 text-3xl font-bold text-white md:pt-2 md:pl-24">
             Book a consult
           </h1>
@@ -541,6 +558,11 @@
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!--AOS-->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 
 </html>
