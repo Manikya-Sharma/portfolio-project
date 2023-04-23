@@ -56,19 +56,20 @@ function openHamburger(hmb) {
   containerList.style.display = "flex";
   containerList.style.flexDirection = "column";
   containerList.style.gap = "0.75rem";
-  containerList.style.background = "rgb(203 213 225)";
+  // containerList.style.background = "rgb(203 213 225)";
+  containerList.style.background = "white";
   containerList.style.borderRadius = "0.5rem";
   containerList.style.transitionProperty = "all";
   containerList.style.transitionTimingFunction = "cubic-bezier(0.4, 0, 0.2, 1)";
   containerList.style.transitionDuration = "200ms";
   containerList.style.textAlign = "center";
-  containerList.style.boxShadow = "7px 10px 2px #888888";
-  containerList.addEventListener("mouseover", () => {
-    containerList.style.boxShadow = "7px 10px 2px #555555";
-  });
-  containerList.addEventListener("mouseout", () => {
-    containerList.style.boxShadow = "7px 10px 2px #888888";
-  });
+  // containerList.style.boxShadow = "7px 10px 2px #888888";
+  // containerList.addEventListener("mouseover", () => {
+  //   containerList.style.boxShadow = "7px 10px 2px #555555";
+  // });
+  // containerList.addEventListener("mouseout", () => {
+  //   containerList.style.boxShadow = "7px 10px 2px #888888";
+  // });
   containerList.appendChild(mentorship);
   containerList.appendChild(sayHello);
 
