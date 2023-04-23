@@ -2,24 +2,47 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
-  <link rel="icon" href="./intro-images/logo.png" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <title>Contact me</title>
-  <script src="./script.js" defer></script>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
+    <link rel="icon" href="./intro-images/logo.png" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Contact me</title>
+    <script src="./script.js" defer></script>
+    <!--Inline style for testing purposes only, otherwise using layer in style.css-->
+    <style>
+      .sign-up-body {
+        background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+        background-size: 400% 400%;
+        animation: gradient 15s ease infinite;
+        height: 100vh;
+      }
+
+      @keyframes gradient {
+        0% {
+          background-position: 0% 50%;
+        }
+        50% {
+          background-position: 100% 50%;
+        }
+        100% {
+          background-position: 0% 50%;
+        }
+      }
+    </style>
   </head>
-  <body>
+  <body class="sign-up-body">
     <nav>
-      <div class="flex h-10 justify-between sm:h-24 md:h-32 py-5">
-        <a href="./index.html">
-          <img
-            src="./intro-images/logo.png"
-            alt="logo"
-            class="my-auto ml-5 block h-7 w-7 md:ml-10 md:h-14 md:w-14"
-          />
-        </a>
+      <div class="flex h-10 justify-between py-5 sm:h-24 md:h-32">
+        <div class="my-auto">
+          <a href="./index.html">
+            <img
+              src="./intro-images/logo.svg"
+              alt="logo"
+              class="my-auto ml-5 block h-7 w-7 md:ml-10 md:h-14 md:w-14 drop-shadow-lg"
+            />
+          </a>
+        </div>
         <a
           href="./index.html"
           class="my-auto mr-5 block h-7 w-7 text-[#6e07f3] md:mr-10 md:h-14 md:w-14"
@@ -46,7 +69,7 @@
     <div class="mt-2 flex justify-center">
       <div class="my-auto ml-auto h-[2px] w-1/3 bg-slate-200"></div>
       <img
-        src="intro-images/avataar.png"
+        src="intro-images/avataar-transparent.png"
         class="mx-auto w-[90px] sm:w-[100px] md:w-[130px]"
       />
       <div class="my-auto mr-auto h-[2px] w-1/3 bg-slate-200"></div>
@@ -55,7 +78,7 @@
     <div class="container mx-auto py-10 md:py-24">
       <div class="mb-12 flex w-full flex-col text-center">
         <h1
-          class="title-font mx-auto mb-4 max-w-[75%] text-2xl font-medium text-gray-800 sm:text-4xl"
+          class="title-font mx-auto mb-4 max-w-[75%] text-2xl font-medium text-slate-300 drop-shadow-lg sm:text-4xl"
         >
           Thanks for taking the time to reach out. How can I help you today?
         </h1>
@@ -64,45 +87,51 @@
         <div class="flex flex-wrap">
           <div class="w-1/2 p-2">
             <div class="">
-              <label for="name" class="text-lg ml-2 cursor-pointer leading-7 text-gray-600"
+              <label
+                for="name"
+                class="ml-2 cursor-pointer text-lg leading-7 text-gray-200"
                 >Name</label
               >
               <input
                 type="text"
                 id="name"
                 name="name"
-                class="w-full rounded-xl border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-[#6e07f3] focus:bg-white focus:ring-2 focus:ring-fuchsia-500 hover:border-[1px] hover:border-[#6e07f3] font-semibold"
+                class="w-full rounded-xl border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base font-semibold leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out hover:border-[1px] hover:border-[#6e07f3] focus:border-[#6e07f3] focus:bg-white focus:ring-2 focus:ring-fuchsia-500"
               />
             </div>
           </div>
           <div class="w-1/2 p-2">
             <div class="">
-              <label for="email" class="text-lg ml-2 cursor-pointer leading-7 text-gray-600"
+              <label
+                for="email"
+                class="ml-2 cursor-pointer text-lg leading-7 text-gray-200"
                 >Email</label
               >
               <input
                 type="email"
                 id="email"
                 name="email"
-                class="w-full rounded-xl border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-[#6e07f3] focus:bg-white focus:ring-2 focus:ring-fuchsia-500 hover:border-[1px] hover:border-[#6e07f3] font-semibold"
+                class="w-full rounded-xl border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base font-semibold leading-8 text-gray-700 outline-none transition-colors duration-200 ease-in-out hover:border-[1px] hover:border-[#6e07f3] focus:border-[#6e07f3] focus:bg-white focus:ring-2 focus:ring-fuchsia-500"
               />
             </div>
           </div>
           <div class="w-full p-2">
             <div class="">
-              <label for="message" class="text-lg ml-2 cursor-pointer leading-7 text-gray-600"
+              <label
+                for="message"
+                class="ml-2 cursor-pointer text-lg leading-7 text-gray-200"
                 >Message</label
               >
               <textarea
                 id="message"
                 name="message"
-                class="h-32 w-full resize-none rounded-xl border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out focus:border-[#6e07f3] focus:bg-white focus:ring-2 focus:ring-fuchsia-500 hover:border-[1px] hover:border-[#6e07f3] font-semibold"
+                class="h-32 w-full resize-none rounded-xl border border-gray-300 bg-gray-100 bg-opacity-50 py-1 px-3 text-base font-semibold leading-6 text-gray-700 outline-none transition-colors duration-200 ease-in-out hover:border-[1px] hover:border-[#6e07f3] focus:border-[#6e07f3] focus:bg-white focus:ring-2 focus:ring-fuchsia-500"
               ></textarea>
             </div>
-         </div>
+          </div>
           <div class="w-full p-2">
             <button
-              class="text-centre mx-auto block px-10 py-3 rounded-full border-2 border-[#6e07f3] font-semibold text-[#6e07f3] transition-all duration-300 hover:bg-[#6e07f3] hover:text-[#ffffff] text-xl"
+              class="text-centre mx-auto block rounded-full border-2 border-white px-10 py-3 text-xl font-semibold text-white hover:border-[#6e07f3] transition-all duration-300 hover:bg-[#6e07f3] hover:text-[#ffffff]"
             >
               Submit
             </button>
@@ -111,7 +140,7 @@
             class="mt-8 w-full border-t border-gray-200 p-2 pt-8 text-center"
           >
             <span class="inline-flex">
-              <a class="cursor-pointer text-gray-500">
+              <a class="cursor-pointer text-slate-700">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -125,7 +154,7 @@
                   ></path>
                 </svg>
               </a>
-              <a class="ml-4 cursor-pointer text-gray-500">
+              <a class="ml-4 cursor-pointer text-slate-700">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
@@ -139,7 +168,7 @@
                   ></path>
                 </svg>
               </a>
-              <a class="ml-4 cursor-pointer text-gray-500">
+              <a class="ml-4 cursor-pointer text-slate-700">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -155,7 +184,7 @@
                   ></path>
                 </svg>
               </a>
-              <a class="ml-4 cursor-pointer text-gray-500">
+              <a class="ml-4 cursor-pointer text-slate-700">
                 <svg
                   fill="currentColor"
                   stroke-linecap="round"
