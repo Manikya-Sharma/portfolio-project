@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 /* // To be added at the time of deployment */
-@layer components{
+@layer components {
   .sign-up-body {
     background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
