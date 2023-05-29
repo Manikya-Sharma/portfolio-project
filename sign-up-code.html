@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="stylesheet" href="./dist/output.css" /> -->
+    <link rel="stylesheet" href="./dist/output.css" />
     <link rel="icon" href="./intro-images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Contact me</title>
-    <script src="./script.js" defer></script>
+    <script src="./sign-up-script.js" defer></script>
     <!--Inline style for testing purposes only, otherwise using layer in style.css-->
-    <style>
+    <!-- <style>
       .sign-up-body {
         background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
         background-size: 400% 400%;
@@ -29,7 +29,7 @@
           background-position: 0% 50%;
         }
       }
-    </style>
+    </style> -->
   </head>
   <body class="sign-up-body">
     <nav>
@@ -39,7 +39,7 @@
             <img
               src="./intro-images/logo.svg"
               alt="logo"
-              class="my-auto ml-5 block h-7 w-7 md:ml-10 md:h-14 md:w-14 drop-shadow-lg"
+              class="my-auto ml-5 block h-7 w-7 drop-shadow-lg md:ml-10 md:h-14 md:w-14"
             />
           </a>
         </div>
@@ -78,13 +78,14 @@
     <div class="container mx-auto py-10 md:py-24">
       <div class="mb-12 flex w-full flex-col text-center">
         <h1
+          id="main-heading"
           class="title-font mx-auto mb-4 max-w-[75%] text-2xl font-medium text-slate-300 drop-shadow-lg sm:text-4xl"
         >
           Thanks for taking the time to reach out. How can I help you today?
         </h1>
       </div>
       <div class="mx-auto max-w-[80%] md:w-2/3 lg:w-1/2">
-        <div class="flex flex-wrap">
+        <form class="flex flex-wrap">
           <div class="w-1/2 p-2">
             <div class="">
               <label
@@ -131,7 +132,9 @@
           </div>
           <div class="w-full p-2">
             <button
-              class="text-centre mx-auto block rounded-full border-2 border-white px-10 py-3 text-xl font-semibold text-white hover:border-[#6e07f3] transition-all duration-300 hover:bg-[#6e07f3] hover:text-[#ffffff]"
+              id="submit-button"
+              type="submit"
+              class="text-centre mx-auto block rounded-full border-2 border-white px-10 py-3 text-xl font-semibold text-white transition-all duration-300 hover:border-[#6e07f3] hover:bg-[#6e07f3] hover:text-[#ffffff]"
             >
               Submit
             </button>
@@ -200,7 +203,7 @@
               </a>
             </span>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   </body>

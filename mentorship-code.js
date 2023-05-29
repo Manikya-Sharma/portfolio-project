@@ -334,3 +334,9 @@ window.onscroll = function () {
   prevScrollPos = currentScrollPos;
 };
 
+const introButtons = document.querySelectorAll(".introduce");
+for (const btn of introButtons) {
+  btn.addEventListener("click", () => {
+    location.href = "./sign-up-code.html";
+  });
+}
