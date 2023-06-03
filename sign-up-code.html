@@ -8,7 +8,34 @@
     <link rel="icon" href="./intro-images/logo.png" />
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Contact me</title>
+    <!-- Email JS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script src="initialize-emailjs.js"></script>
     <script src="./sign-up-script.js" defer></script>
+    <script type="text/javascript">
+      window.onload = function () {
+        document
+          .getElementsByTagName("form")[0]
+          .addEventListener("submit", function (event) {
+            event.preventDefault();
+            emailjs.sendForm("round_table", "contact_form", this).then(
+              function () {
+                console.log("Successfully sent email");
+              },
+              function (error) {
+                alert("Sorry, there was an error, please try again later");
+              }
+            );
+            document.querySelector("form").remove();
+            document.querySelector("#main-heading").textContent =
+              "Thanks for reaching out. I will contact you soon";
+          });
+      };
+    </script>
+    <!-- Email JS end -->
     <!--Inline style for testing purposes only, otherwise using layer in style.css-->
     <!-- <style>
       .sign-up-body {
@@ -45,24 +72,9 @@
         </div>
         <a
           href="./index.html"
-          class="my-auto mr-5 block h-7 w-7 text-[#6e07f3] md:mr-10 md:h-14 md:w-14"
+          class="my-auto mr-5 block text-lg font-medium text-white drop-shadow-lg transition-all duration-200 hover:text-rose-100 sm:text-xl"
         >
-          <svg
-            class="h-full w-full"
-            xmlns="http://www.w3.org/2000/svg"
-            width="200"
-            height="200"
-            fill="currentColor"
-            class="bi bi-x"
-            viewBox="0 0 16 16"
-            id="IconChangeColor"
-          >
-            <path
-              d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"
-              id="mainIconPathAttribute"
-              fill="currentColor"
-            ></path>
-          </svg>
+          Home
         </a>
       </div>
     </nav>
